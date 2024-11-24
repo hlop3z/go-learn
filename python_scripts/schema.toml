@@ -1,0 +1,128 @@
+[project]
+name = "ORM"                                                    # Application Name
+version = "1.0.0"                                               # Version Number
+description = "DataTypes Schema"
+code = ["sql", "gql", "json", "javascript", "golang", "python"]
+
+[numeric]
+user_step = 0.001                # (1 Thousandth) Precision defined by user
+user_safe = 1000000000000        # (1 Trillion) Max safe value for user `SQL_DECIMAL(17, 3)`
+max_serial = 1000000000000000000 # (1 Quintillion) Max value for database storage
+max_small_integer = 1000000000   # (1 Billion) Custom max integer for business logic
+
+
+# ---------------------------
+# Database (Types)
+# ---------------------------
+[database] # Postgres Based
+# JSON-Field (Descriptions)
+serial = "Auto-Incrementing (int) Field"
+boolean = "Flag Values (True, False)"
+number = "Frontend Numbers (int, float)"
+string = "Frontend Text"
+text = "Frontend Text"
+# JSON-Objects
+json = "List or Dict"     # String  => Faster (Insertions) and Slower (Complex Queries)
+jsonb = "Array or Object" # Binary => Slower (Insertions) and Faster (Complex Queries)
+# Special
+null = "A blank `string` is a `null` Example: ('')"
+reference = "A Function that joins references/related objects"     # python(ForwardRef)
+computed = "A Function that computes and returns a computed value"
+# Special Objects
+file_object = "A JSON representation of a file."
+scalar_object = "A JSON representation of a type."
+
+
+# ---------------------------
+# Control
+# ---------------------------
+[control]
+tags = { custom_type = "~", file = "+", computed = "@", reference = "#", scalar = "$" }
+# JSON Valid
+auto = ["serial"]
+json = ["boolean", "number", "string", "object", "array", "null"]
+# Virtual Values
+virtual = ["File", "Computed", "Model", "Scalar"]
+# Scalar
+internal = [
+    # Utils/Tools (as Objects)
+    "File",        # (+) => def get_file(method): pass
+    "Computed(@)", # (@) => def computed(**optional_kwargs): pass
+    "Model(#)",    # (#) => { Model Reference }
+    "Scalar($)",   # ($) => { Global Type }
+]
+# Scalar
+types = [
+    # Types (Basic)
+    "Bool",
+    "Integer",
+    "Float",
+    "String",
+    "Null",
+    # String (Complex)
+    "Text",
+    "DateTime",
+    "Date",
+    "Time",
+    # Numbers (Complex)
+    "ID",
+    "BigInt",
+    "Decimal",
+    # JSON (Basic)
+    "List",
+    "Dict",
+    "Enum",
+    "Array",
+    "Object",
+    # JSON (Complex)
+    "Model",
+    "Computed",
+    "File",
+    # JSON (Generator)
+    "Scalar",
+]
+
+# ---------------------------
+# Types Scalars
+# ---------------------------
+[scalar] # Storage == Bytes
+# Core (Binary-Style)
+Null = { alias = "null", database = "null", return = "null", storage = 0 }
+Bool = { alias = "string", database = "boolean", return = "boolean", storage = 1 }
+
+# Number (Basic)
+Integer = { alias = "int", database = "number", return = "number", storage = 4 }
+Float = { alias = "float", database = "number", return = "number", storage = 8 }
+
+# Number (Auto-Incrementing)
+ID = { alias = "id", database = "serial", return = "string", storage = 8 }
+
+# Number (Complex)
+BigInt = { alias = "bigint", database = "number", return = "string", storage = 8 }
+Decimal = { alias = "decimal", database = "number", return = "string", storage = -1 }
+
+# String (Basic)
+String = { alias = "string", database = "string", return = "string", storage = 1021 } # VARCHAR(255) => 2-bytes overhead (not applicable to VARCHAR(255))
+Text = { alias = "text", database = "string", return = "string", storage = -1 }
+
+# String (Complex) => {Time Related}
+DateTime = { alias = "datetime", database = "string", return = "string", storage = -1 }
+Date = { alias = "date", database = "string", return = "string", storage = -1 }
+Time = { alias = "time", database = "string", return = "string", storage = -1 }
+
+# JSON (Basic)
+List = { alias = "list", database = "json", return = "array", storage = -1 }
+Dict = { alias = "dict", database = "json", return = "object", storage = -1 }
+Enum = { alias = "enum", database = "json", return = "object", storage = -1 } # Enumeration (GraphQL)
+
+# JSONB (Complex)
+Array = { alias = "array", database = "jsonb", return = "array", storage = -1 }
+Object = { alias = "object", database = "jsonb", return = "object", storage = -1 }
+
+# Special (Function & Utils)
+Model = { alias = "model", database = "reference", return = "~reference", storage = -1 }
+Computed = { alias = "computed", database = "computed", return = "~computed", storage = -1 }
+File = { alias = "file", database = "reference", return = "~file_object", storage = -1 }
+
+# Core Util
+Scalar = { alias = "scalar", database = "json", return = "~scalar_object", storage = -1 }
