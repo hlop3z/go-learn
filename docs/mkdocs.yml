@@ -1,0 +1,52 @@
+site_name: Go Notebook
+
+# Path Watch
+watch:
+  - overrides
+
+  # Navigation
+nav:
+  - Home: index.md
+  - Types: types.md
+  - Variables: variables.md
+  - Basics:
+      - Naming: naming_conventions.md
+      - Strings: strings.md
+      - DateTime: datetime.md
+      - IF (Statement): if-blocks.md
+      - For (Loops): for-loops.md
+      - Union/Any: union-any.md
+  - Numbers:
+      - Limits: numbers/limits.md
+  - Pythonic:
+      - Kwargs: pythonic/kwargs.md
+      - Data-Types: pythonic/data-types.md
+
+theme:
+  name: material
+  custom_dir: overrides
+  locale: en
+  features:
+    # - navigation.tabs
+    - navigation.instant
+    - navigation.tracking
+    - navigation.sections
+    - navigation.top
+    - content.code.annotate
+    # - navigation.expand
+  icon:
+    logo: material/webhook
+
+  palette:
+    - media: "(prefers-color-scheme: light)"
+      scheme: default
+      primary: pink
+      toggle:
+        icon: material/toggle-switch-off-outline
+        name: Switch to dark mode
+    - media: "(prefers-color-scheme: dark)"
+      scheme: slate
+      primary: pink
+      toggle:
+        icon: material/toggle-switch
+        name: Switch to light mode
