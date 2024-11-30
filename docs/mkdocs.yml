@@ -37,6 +37,8 @@ nav:
           - Encoders: files/encoders.md
           - JSON: files/json_load_dump.md
           - HTML: files/html_templates.md
+      - Advanced:
+          - Command-Line Interface: advanced/cli.md
       - Pythonic:
           - Any/Dict/List: pythonic/any-dict-list.md
           - Kwargs: pythonic/kwargs.md
