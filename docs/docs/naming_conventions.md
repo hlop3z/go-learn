@@ -6,18 +6,18 @@ In Go, naming conventions are consistent and idiomatic, helping to make code rea
 
 | Element        | Convention   | Example                  |
 | -------------- | ------------ | ------------------------ |
+| Files          | `snake_case` | `user_service.go`        |
+| Packages       | `lowercase`  | `http`, `json`           |
 | Functions      | `camelCase`  | `getUserName`, `update`  |
-| Exported Funcs | `PascalCase` | `GetUserName`            |
 | Variables      | `camelCase`  | `userName`, `maxRetries` |
+| Exported Funcs | `PascalCase` | `GetUserName`            |
 | Constants      | `PascalCase` | `MaxConnections`         |
 | Structs        | `PascalCase` | `User`, `Product`        |
 | Interfaces     | `PascalCase` | `Reader`, `Logger`       |
-| Packages       | `lowercase`  | `http`, `json`           |
-| Files          | `snake_case` | `user_service.go`        |
 
 ---
 
-### Additional Notes
+## Additional Notes
 
 1. **Exporting Symbols**: If something starts with an uppercase letter, it becomes exported and accessible outside the package.
 2. **Keep It Short**: Go values simplicity, so avoid verbose names.
@@ -27,6 +27,8 @@ In Go, naming conventions are consistent and idiomatic, helping to make code rea
 By following these conventions, your Go code will remain idiomatic and align well with community standards.
 
 ---
+
+## Examples
 
 ### **1. Functions and Methods**
 

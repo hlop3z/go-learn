@@ -1,4 +1,4 @@
-# GO - Lang
+# Go Commands
 
 In **Go**, there are several built-in commands that you'll likely use frequently during development. These commands are part of the **Go Tool** suite, which helps with tasks like building, testing, and managing dependencies. Here’s a list of the most commonly used **Go** commands:
 

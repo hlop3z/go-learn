@@ -1,3 +1,4 @@
 # Links
 
-- [Prism](https://prismjs.com/download.html#themes=prism-tomorrow&languages=markup+css+clike+javascript+go+go-module+jsx+tsx+typescript)
+- Theme: `Okaidia`
+- [Prism](https://prismjs.com/download.html#themes=prism-okaidia&languages=markup+css+clike+javascript+go+go-module+graphql+json+python+jsx+tsx+toml+typescript+yaml)

@@ -1,4 +1,4 @@
-# IF-Blocks
+# IF Statement Blocks
 
 In Go, the `if` statement is similar to other programming languages. It allows you to execute a block of code based on a condition. Here's a detailed guide with examples:
 

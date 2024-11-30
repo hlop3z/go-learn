@@ -1,4 +1,4 @@
-# For-Loop
+# For Loop Blocks
 
 In Go, the **`for` loop** is the only looping construct available. However, it is versatile enough to cover the functionality of `while` and `foreach` loops found in other languages. Below are examples to illustrate different ways you can use a `for` loop in Go:
 

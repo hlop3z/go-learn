@@ -61,3 +61,34 @@ The range for a `float64` in Go (as defined by the IEEE 754 standard for 64-bit 
 - A `float64` provides approximately **15–17 decimal digits** of precision.
 
 This makes `float64` suitable for a wide range of scientific and engineering applications requiring high precision and a large range of values.
+
+---
+
+## Safe Numbers (JavaScript and Business Logic)
+
+| Title               | Number                    | Notes                                                              |
+| ------------------- | ------------------------- | ------------------------------------------------------------------ |
+| Minimum             | **`0.00001`**             | (100 Thousandth) Minimum safe decimal precision for user input     |
+| Maximum             | **`1000000000`**          | (1 Billion) Maximum safe integer for business logic                |
+| Safe Numbers        | **`1000000000.00001`**    | (1 Billion + 100 Thousandth) Decimals => `SQL_DECIMAL(15, 5)`      |
+| Storage Max Integer | **`1000000000000000000`** | (1 Quintillion) Maximum value supported by Database/GoLang storage |
+
+```go
+// ------------------------------------------------------------------------
+// Safe Numbers (JavaScript and Business Logic)
+// ------------------------------------------------------------------------
+
+const (
+ // MinSafeDecimal represents the smallest safe decimal value for user input.
+ MinSafeDecimal float64 = 0.00001 // (100 Thousandth)
+
+ // MaxSafeInteger represents the largest safe integer value for business logic.
+ MaxSafeInteger int64 = 1000000000 // (1 Billion)
+
+ // MaxSafeNumbers represents the largest safe decimal value for precision.
+ MaxSafeNumbers float64 = 1000000000.00001 // (1 Billion + 100 Thousandth)
+
+ // StorageMaxInteger represents the maximum value supported by database/GoLang storage.
+ StorageMaxInteger int64 = 1000000000000000000 // (1 Quintillion)
+)
+```

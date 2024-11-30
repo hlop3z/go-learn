@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <!-- Title -->
+    <title>Xtyle + TS</title>
+
+    <!-- Xtyle -->
+    <script src="https://unpkg.com/xtyle@latest"></script>
+
+    <!-- Xtylist (JS) -->
+    <script src="https://unpkg.com/xtylist@latest"></script>
+
+    <!-- Xtylist (CSS) -->
+    <link href="https://unpkg.com/xtylist@latest/dist/style.css" rel="stylesheet" />
+</head>
+
+<body>
+    <script></script>
+    <script>
+        /**
+         * @Register <Plugin>
+         */
+        xtyle.use(xtylist);
+
+        /**
+         * @Router
+         */
+        const router = {
+            history: false,
+            baseURL: null,
+        };
+
+        /**
+         * @StartApp
+         */
+        const Preview = () => h("h1", null, "Hello World")
+        xtyle.init(Preview, document.body, router);
+
+        /**
+         * @Previews
+         */
+
+        /* Actions */
+        console.log("Actions: ", xtyle.action.keys());
+
+        /* Directives */
+        console.log("Directives: ", Object.keys(xtyle.allDirectives));
+
+        /* Globals */
+        console.log("Globals: ", xtyle.global);
+
+        /* Models */
+        console.log("Models: ", xtyle.models.keys());
+
+        /* Routes */
+        console.log("Routes: ", xtyle.router.keys());
+
+        /* Store */
+        console.log("Store: ", xtyle.store);
+
+    </script>
+</body>
+
+</html>
