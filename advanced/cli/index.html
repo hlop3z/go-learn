@@ -8,29 +8,29 @@
       
       
       
-        <link rel="canonical" href="https://hlop3z.github.io/go-learn/packages/vendors/esbuild/">
+        <link rel="canonical" href="https://hlop3z.github.io/go-learn/advanced/cli/">
       
       
-        <link rel="prev" href="../goja/">
+        <link rel="prev" href="../../files/html_templates/">
       
       
-        <link rel="next" href="../minify/">
+        <link rel="next" href="../../pythonic/any-dict-list/">
       
       
-      <link rel="icon" href="../../../assets/images/favicon.png">
+      <link rel="icon" href="../../assets/images/favicon.png">
       <meta name="generator" content="mkdocs-1.6.1, mkdocs-material-9.5.46">
     
     
       
-        <title>ESBuild - Go Notes</title>
+        <title>Command-Line Interface - Go Notes</title>
       
     
     
 
-      <link rel="stylesheet" href="../../../assets/stylesheets/main.6f8fc17f.min.css">
+      <link rel="stylesheet" href="../../assets/stylesheets/main.6f8fc17f.min.css">
       
         
-        <link rel="stylesheet" href="../../../assets/stylesheets/palette.06af60db.min.css">
+        <link rel="stylesheet" href="../../assets/stylesheets/palette.06af60db.min.css">
       
       
 
@@ -52,11 +52,11 @@
       
     
     
-      <link rel="stylesheet" href="../../../css/extra.css">
+      <link rel="stylesheet" href="../../css/extra.css">
     
-      <link rel="stylesheet" href="../../../plugins/prism/style.css">
+      <link rel="stylesheet" href="../../plugins/prism/style.css">
     
-    <script>__md_scope=new URL("../../..",location),__md_hash=e=>[...e].reduce(((e,_)=>(e<<5)-e+_.charCodeAt(0)),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+    <script>__md_scope=new URL("../..",location),__md_hash=e=>[...e].reduce(((e,_)=>(e<<5)-e+_.charCodeAt(0)),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
     
       
 
@@ -82,7 +82,7 @@
     <div data-md-component="skip">
       
         
-        <a href="#esbuild-tsx" class="md-skip">
+        <a href="#command-line-interface" class="md-skip">
           Skip to content
         </a>
       
@@ -96,7 +96,7 @@
 
 <header class="md-header" data-md-component="header">
   <nav class="md-header__inner md-grid" aria-label="Header">
-    <a href="../../.." title="Go Notes" class="md-header__button md-logo" aria-label="Go Notes" data-md-component="logo">
+    <a href="../.." title="Go Notes" class="md-header__button md-logo" aria-label="Go Notes" data-md-component="logo">
       
   
   <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M10.46 19C9 21.07 6.15 21.59 4.09 20.15c-2.05-1.44-2.53-4.31-1.09-6.4a4.59 4.59 0 0 1 3.58-1.98l.05 1.43c-.91.07-1.79.54-2.36 1.36-1 1.44-.69 3.38.68 4.35 1.38.96 3.31.59 4.31-.84.31-.45.49-.94.56-1.44v-1.01l5.58-.04.07-.11c.53-.92 1.68-1.24 2.58-.72a1.9 1.9 0 0 1 .68 2.6c-.53.91-1.69 1.23-2.59.71-.41-.23-.7-.6-.83-1.02l-4.07.02a5 5 0 0 1-.78 1.94m7.28-7.14c2.53.31 4.33 2.58 4.02 5.07-.31 2.5-2.61 4.27-5.14 3.96a4.63 4.63 0 0 1-3.43-2.21l1.24-.72a3.22 3.22 0 0 0 2.32 1.45c1.75.21 3.3-.98 3.51-2.65s-1.03-3.2-2.76-3.41c-.54-.06-1.06.01-1.53.18l-.85.44-2.58-4.77h-.22a1.906 1.906 0 0 1-1.85-1.95c.03-1.04.93-1.85 1.98-1.81 1.05.06 1.88.91 1.85 1.95-.02.44-.19.84-.46 1.15l1.9 3.51c.62-.2 1.3-.27 2-.19M8.25 9.14c-1-2.35.06-5.04 2.37-6.02 2.32-.98 5 .13 6 2.48.59 1.37.47 2.87-.2 4.07l-1.24-.72c.42-.81.49-1.8.09-2.73-.68-1.6-2.49-2.37-4.04-1.72-1.56.66-2.26 2.5-1.58 4.1.28.66.75 1.17 1.32 1.51l.39.21-3.07 4.99c.03.05.07.11.1.19.49.91.15 2.06-.77 2.55-.91.49-2.06.13-2.56-.81-.49-.93-.15-2.08.77-2.57.39-.21.82-.26 1.23-.17l2.31-3.77c-.47-.43-.87-.97-1.12-1.59"/></svg>
@@ -116,7 +116,7 @@
         <div class="md-header__topic" data-md-component="header-topic">
           <span class="md-ellipsis">
             
-              ESBuild
+              Command-Line Interface
             
           </span>
         </div>
@@ -221,11 +221,13 @@
         
   
   
+    
+  
   
     
     
-      <li class="md-tabs__item">
-        <a href="../../.." class="md-tabs__link">
+      <li class="md-tabs__item md-tabs__item--active">
+        <a href="../.." class="md-tabs__link">
           
   
   Go Lang
@@ -239,13 +241,11 @@
         
   
   
-    
-  
   
     
     
-      <li class="md-tabs__item md-tabs__item--active">
-        <a href="../../layout/" class="md-tabs__link">
+      <li class="md-tabs__item">
+        <a href="../../packages/layout/" class="md-tabs__link">
           
   
   Packages
@@ -278,7 +278,7 @@
 
 <nav class="md-nav md-nav--primary md-nav--lifted" aria-label="Navigation" data-md-level="0">
   <label class="md-nav__title" for="__drawer">
-    <a href="../../.." title="Go Notes" class="md-nav__button md-logo" aria-label="Go Notes" data-md-component="logo">
+    <a href="../.." title="Go Notes" class="md-nav__button md-logo" aria-label="Go Notes" data-md-component="logo">
       
   
   <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M10.46 19C9 21.07 6.15 21.59 4.09 20.15c-2.05-1.44-2.53-4.31-1.09-6.4a4.59 4.59 0 0 1 3.58-1.98l.05 1.43c-.91.07-1.79.54-2.36 1.36-1 1.44-.69 3.38.68 4.35 1.38.96 3.31.59 4.31-.84.31-.45.49-.94.56-1.44v-1.01l5.58-.04.07-.11c.53-.92 1.68-1.24 2.58-.72a1.9 1.9 0 0 1 .68 2.6c-.53.91-1.69 1.23-2.59.71-.41-.23-.7-.6-.83-1.02l-4.07.02a5 5 0 0 1-.78 1.94m7.28-7.14c2.53.31 4.33 2.58 4.02 5.07-.31 2.5-2.61 4.27-5.14 3.96a4.63 4.63 0 0 1-3.43-2.21l1.24-.72a3.22 3.22 0 0 0 2.32 1.45c1.75.21 3.3-.98 3.51-2.65s-1.03-3.2-2.76-3.41c-.54-.06-1.06.01-1.53.18l-.85.44-2.58-4.77h-.22a1.906 1.906 0 0 1-1.85-1.95c.03-1.04.93-1.85 1.98-1.81 1.05.06 1.88.91 1.85 1.95-.02.44-.19.84-.46 1.15l1.9 3.51c.62-.2 1.3-.27 2-.19M8.25 9.14c-1-2.35.06-5.04 2.37-6.02 2.32-.98 5 .13 6 2.48.59 1.37.47 2.87-.2 4.07l-1.24-.72c.42-.81.49-1.8.09-2.73-.68-1.6-2.49-2.37-4.04-1.72-1.56.66-2.26 2.5-1.58 4.1.28.66.75 1.17 1.32 1.51l.39.21-3.07 4.99c.03.05.07.11.1.19.49.91.15 2.06-.77 2.55-.91.49-2.06.13-2.56-.81-.49-.93-.15-2.08.77-2.57.39-.21.82-.26 1.23-.17l2.31-3.77c-.47-.43-.87-.97-1.12-1.59"/></svg>
@@ -305,27 +305,30 @@
       
   
   
+    
   
   
+  
     
     
     
+      
+        
+        
       
       
         
       
     
     
-    <li class="md-nav__item md-nav__item--nested">
+    <li class="md-nav__item md-nav__item--active md-nav__item--section md-nav__item--nested">
       
         
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_1" checked>
         
           
-        
-        <input class="md-nav__toggle md-toggle md-toggle--indeterminate" type="checkbox" id="__nav_1" >
-        
-          
-          <label class="md-nav__link" for="__nav_1" id="__nav_1_label" tabindex="0">
+          <label class="md-nav__link" for="__nav_1" id="__nav_1_label" tabindex="">
             
   
   <span class="md-ellipsis">
@@ -336,7 +339,7 @@
             <span class="md-nav__icon md-icon"></span>
           </label>
         
-        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_1_label" aria-expanded="false">
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_1_label" aria-expanded="true">
           <label class="md-nav__title" for="__nav_1">
             <span class="md-nav__icon md-icon"></span>
             Go Lang
@@ -350,7 +353,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../.." class="md-nav__link">
+      <a href="../.." class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -371,7 +374,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../types/" class="md-nav__link">
+      <a href="../../types/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -392,7 +395,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../variables/" class="md-nav__link">
+      <a href="../../variables/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -413,7 +416,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../naming_conventions/" class="md-nav__link">
+      <a href="../../naming_conventions/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -434,7 +437,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../docstring/" class="md-nav__link">
+      <a href="../../docstring/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -460,10 +463,13 @@
       
       
         
+          
+          
+        
       
     
     
-    <li class="md-nav__item md-nav__item--nested">
+    <li class="md-nav__item md-nav__item--section md-nav__item--nested">
       
         
         
@@ -472,7 +478,7 @@
         <input class="md-nav__toggle md-toggle md-toggle--indeterminate" type="checkbox" id="__nav_1_6" >
         
           
-          <label class="md-nav__link" for="__nav_1_6" id="__nav_1_6_label" tabindex="0">
+          <label class="md-nav__link" for="__nav_1_6" id="__nav_1_6_label" tabindex="">
             
   
   <span class="md-ellipsis">
@@ -497,7 +503,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../strings/" class="md-nav__link">
+      <a href="../../strings/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -518,7 +524,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../datetime/" class="md-nav__link">
+      <a href="../../datetime/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -539,7 +545,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../if-blocks/" class="md-nav__link">
+      <a href="../../if-blocks/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -560,7 +566,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../for-loops/" class="md-nav__link">
+      <a href="../../for-loops/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -581,7 +587,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../union-any/" class="md-nav__link">
+      <a href="../../union-any/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -615,10 +621,13 @@
       
       
         
+          
+          
+        
       
     
     
-    <li class="md-nav__item md-nav__item--nested">
+    <li class="md-nav__item md-nav__item--section md-nav__item--nested">
       
         
         
@@ -627,7 +636,7 @@
         <input class="md-nav__toggle md-toggle md-toggle--indeterminate" type="checkbox" id="__nav_1_7" >
         
           
-          <label class="md-nav__link" for="__nav_1_7" id="__nav_1_7_label" tabindex="0">
+          <label class="md-nav__link" for="__nav_1_7" id="__nav_1_7_label" tabindex="">
             
   
   <span class="md-ellipsis">
@@ -652,7 +661,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../numbers/limits/" class="md-nav__link">
+      <a href="../../numbers/limits/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -686,10 +695,13 @@
       
       
         
+          
+          
+        
       
     
     
-    <li class="md-nav__item md-nav__item--nested">
+    <li class="md-nav__item md-nav__item--section md-nav__item--nested">
       
         
         
@@ -698,7 +710,7 @@
         <input class="md-nav__toggle md-toggle md-toggle--indeterminate" type="checkbox" id="__nav_1_8" >
         
           
-          <label class="md-nav__link" for="__nav_1_8" id="__nav_1_8_label" tabindex="0">
+          <label class="md-nav__link" for="__nav_1_8" id="__nav_1_8_label" tabindex="">
             
   
   <span class="md-ellipsis">
@@ -723,7 +735,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../files/files/" class="md-nav__link">
+      <a href="../../files/files/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -744,7 +756,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../files/encoders/" class="md-nav__link">
+      <a href="../../files/encoders/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -765,7 +777,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../files/json_load_dump/" class="md-nav__link">
+      <a href="../../files/json_load_dump/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -786,7 +798,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../files/html_templates/" class="md-nav__link">
+      <a href="../../files/html_templates/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -812,27 +824,30 @@
                 
   
   
+    
   
   
+  
     
     
     
       
       
-        
-      
-    
-    
-    <li class="md-nav__item md-nav__item--nested">
-      
-        
         
           
+          
         
-        <input class="md-nav__toggle md-toggle md-toggle--indeterminate" type="checkbox" id="__nav_1_9" >
+      
+    
+    
+    <li class="md-nav__item md-nav__item--active md-nav__item--section md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_1_9" checked>
         
           
-          <label class="md-nav__link" for="__nav_1_9" id="__nav_1_9_label" tabindex="0">
+          <label class="md-nav__link" for="__nav_1_9" id="__nav_1_9_label" tabindex="">
             
   
   <span class="md-ellipsis">
@@ -843,7 +858,7 @@
             <span class="md-nav__icon md-icon"></span>
           </label>
         
-        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_1_9_label" aria-expanded="false">
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_1_9_label" aria-expanded="true">
           <label class="md-nav__title" for="__nav_1_9">
             <span class="md-nav__icon md-icon"></span>
             Advanced
@@ -854,10 +869,30 @@
                 
   
   
+    
   
   
-    <li class="md-nav__item">
-      <a href="../../../advanced/cli/" class="md-nav__link">
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
+      
+      
+        
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          
+  
+  <span class="md-ellipsis">
+    Command-Line Interface
+  </span>
+  
+
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
         
   
   <span class="md-ellipsis">
@@ -866,6 +901,122 @@
   
 
       </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#examples" class="md-nav__link">
+    <span class="md-ellipsis">
+      Examples
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Examples">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#1-using-the-go-standard-library-flag" class="md-nav__link">
+    <span class="md-ellipsis">
+      1. Using the Go Standard Library: flag
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="1. Using the Go Standard Library: flag">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#example-using-flag" class="md-nav__link">
+    <span class="md-ellipsis">
+      Example Using flag
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#2-using-cobra-for-more-advanced-features" class="md-nav__link">
+    <span class="md-ellipsis">
+      2. Using cobra for More Advanced Features
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="2. Using cobra for More Advanced Features">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#example-using-cobra" class="md-nav__link">
+    <span class="md-ellipsis">
+      Example Using cobra
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#3-go-osexec-for-running-other-scripts" class="md-nav__link">
+    <span class="md-ellipsis">
+      3. Go + os/exec for Running Other Scripts
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="3. Go + os/exec for Running Other Scripts">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#example-running-a-shell-script-from-go" class="md-nav__link">
+    <span class="md-ellipsis">
+      Example: Running a Shell Script from Go
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#conclusion" class="md-nav__link">
+    <span class="md-ellipsis">
+      Conclusion
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
     </li>
   
 
@@ -891,10 +1042,13 @@
       
       
         
+          
+          
+        
       
     
     
-    <li class="md-nav__item md-nav__item--nested">
+    <li class="md-nav__item md-nav__item--section md-nav__item--nested">
       
         
         
@@ -903,7 +1057,7 @@
         <input class="md-nav__toggle md-toggle md-toggle--indeterminate" type="checkbox" id="__nav_1_10" >
         
           
-          <label class="md-nav__link" for="__nav_1_10" id="__nav_1_10_label" tabindex="0">
+          <label class="md-nav__link" for="__nav_1_10" id="__nav_1_10_label" tabindex="">
             
   
   <span class="md-ellipsis">
@@ -928,7 +1082,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../pythonic/any-dict-list/" class="md-nav__link">
+      <a href="../../pythonic/any-dict-list/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -949,7 +1103,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../pythonic/kwargs/" class="md-nav__link">
+      <a href="../../pythonic/kwargs/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -970,7 +1124,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../pythonic/decorators/" class="md-nav__link">
+      <a href="../../pythonic/decorators/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -991,7 +1145,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../pythonic/data-types/" class="md-nav__link">
+      <a href="../../pythonic/data-types/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -1012,7 +1166,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../pythonic/operators/" class="md-nav__link">
+      <a href="../../pythonic/operators/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -1045,30 +1199,27 @@
       
   
   
-    
   
   
-  
     
     
     
-      
-        
-        
       
       
         
       
     
     
-    <li class="md-nav__item md-nav__item--active md-nav__item--section md-nav__item--nested">
+    <li class="md-nav__item md-nav__item--nested">
       
         
-        
-        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2" checked>
         
           
-          <label class="md-nav__link" for="__nav_2" id="__nav_2_label" tabindex="">
+        
+        <input class="md-nav__toggle md-toggle md-toggle--indeterminate" type="checkbox" id="__nav_2" >
+        
+          
+          <label class="md-nav__link" for="__nav_2" id="__nav_2_label" tabindex="0">
             
   
   <span class="md-ellipsis">
@@ -1079,7 +1230,7 @@
             <span class="md-nav__icon md-icon"></span>
           </label>
         
-        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_2_label" aria-expanded="true">
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_2_label" aria-expanded="false">
           <label class="md-nav__title" for="__nav_2">
             <span class="md-nav__icon md-icon"></span>
             Packages
@@ -1093,7 +1244,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../layout/" class="md-nav__link">
+      <a href="../../packages/layout/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -1111,30 +1262,27 @@
                 
   
   
-    
   
   
-  
     
     
     
       
       
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
         
           
-          
         
-      
-    
-    
-    <li class="md-nav__item md-nav__item--active md-nav__item--section md-nav__item--nested">
-      
-        
-        
-        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2_2" checked>
+        <input class="md-nav__toggle md-toggle md-toggle--indeterminate" type="checkbox" id="__nav_2_2" >
         
           
-          <label class="md-nav__link" for="__nav_2_2" id="__nav_2_2_label" tabindex="">
+          <label class="md-nav__link" for="__nav_2_2" id="__nav_2_2_label" tabindex="0">
             
   
   <span class="md-ellipsis">
@@ -1145,7 +1293,7 @@
             <span class="md-nav__icon md-icon"></span>
           </label>
         
-        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_2_2_label" aria-expanded="true">
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_2_2_label" aria-expanded="false">
           <label class="md-nav__title" for="__nav_2_2">
             <span class="md-nav__icon md-icon"></span>
             Vendors
@@ -1159,7 +1307,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../echo/" class="md-nav__link">
+      <a href="../../packages/vendors/echo/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -1180,7 +1328,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../gorm/" class="md-nav__link">
+      <a href="../../packages/vendors/gorm/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -1201,7 +1349,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../goja/" class="md-nav__link">
+      <a href="../../packages/vendors/goja/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -1219,19 +1367,10 @@
                 
   
   
-    
   
   
-  
-    <li class="md-nav__item md-nav__item--active">
-      
-      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
-      
-      
-        
-      
-      
-      <a href="./" class="md-nav__link md-nav__link--active">
+    <li class="md-nav__item">
+      <a href="../../packages/vendors/esbuild/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -1240,7 +1379,6 @@
   
 
       </a>
-      
     </li>
   
 
@@ -1253,7 +1391,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../minify/" class="md-nav__link">
+      <a href="../../packages/vendors/minify/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -1302,6 +1440,110 @@
     
   
   
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#examples" class="md-nav__link">
+    <span class="md-ellipsis">
+      Examples
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Examples">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#1-using-the-go-standard-library-flag" class="md-nav__link">
+    <span class="md-ellipsis">
+      1. Using the Go Standard Library: flag
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="1. Using the Go Standard Library: flag">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#example-using-flag" class="md-nav__link">
+    <span class="md-ellipsis">
+      Example Using flag
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#2-using-cobra-for-more-advanced-features" class="md-nav__link">
+    <span class="md-ellipsis">
+      2. Using cobra for More Advanced Features
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="2. Using cobra for More Advanced Features">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#example-using-cobra" class="md-nav__link">
+    <span class="md-ellipsis">
+      Example Using cobra
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#3-go-osexec-for-running-other-scripts" class="md-nav__link">
+    <span class="md-ellipsis">
+      3. Go + os/exec for Running Other Scripts
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="3. Go + os/exec for Running Other Scripts">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#example-running-a-shell-script-from-go" class="md-nav__link">
+    <span class="md-ellipsis">
+      Example: Running a Shell Script from Go
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#conclusion" class="md-nav__link">
+    <span class="md-ellipsis">
+      Conclusion
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+    </ul>
+  
 </nav>
                   </div>
                 </div>
@@ -1318,149 +1560,114 @@
   
 
 
-<h1 id="esbuild-tsx">ESBuild (<strong>TSX</strong>)</h1>
+<h1 id="command-line-interface">Command-Line Interface</h1>
+<p>If you're looking for a Go solution similar to Python's <code>argparse</code> for handling command-line arguments, Go has several libraries that help with parsing and handling command-line arguments. The standard <code>flag</code> package provides basic functionality, but if you're looking for something closer to <code>argparse</code> with more features like subcommands, argument types, and
+default values, libraries like <code>cobra</code> and <code>kingpin</code> are good options.</p>
+<h2 id="examples">Examples</h2>
+<h3 id="1-using-the-go-standard-library-flag">1. <strong>Using the Go Standard Library: <code>flag</code></strong></h3>
+<p>Go’s built-in <code>flag</code> package is simple and provides basic functionality for parsing command-line flags. It’s a good starting point for simple scripts.</p>
+<h4 id="example-using-flag">Example Using <code>flag</code></h4>
+<pre><code class="language-go">package main
+
+import (
+ &quot;flag&quot;
+ &quot;fmt&quot;
+)
+
+func main() {
+ // Define flags
+ name := flag.String(&quot;name&quot;, &quot;World&quot;, &quot;Name to greet&quot;)
+ age := flag.Int(&quot;age&quot;, 0, &quot;Your age&quot;)
+ help := flag.Bool(&quot;help&quot;, false, &quot;Show Help&quot;)
+
+ // Parse the command-line flags
+ flag.Parse()
+
+ // Use the parsed flags
+ if *help {
+  fmt.Printf(&quot;Help: %v&quot;, *help)
+ } else {
+  fmt.Printf(&quot;Hello, %s!\n&quot;, *name)
+  fmt.Printf(&quot;You are %d years old.\n&quot;, *age)
+ }
+}
+</code></pre>
+<p>Usage:</p>
+<pre><code class="language-bash">go run main.go --name John --age 30
+</code></pre>
+<p>This would output:</p>
+<pre><code class="language-bash">Hello, John!
+You are 30 years old.
+</code></pre>
+<h3 id="2-using-cobra-for-more-advanced-features">2. <strong>Using <code>cobra</code> for More Advanced Features</strong></h3>
+<p><a href="https://github.com/spf13/cobra"><code>cobra</code></a> is a more feature-rich library for building command-line applications in Go. It supports commands, subcommands, argument parsing, flags, and more. It’s a great choice for building applications similar to Python's <code>argparse</code>.</p>
+<h4 id="example-using-cobra">Example Using <code>cobra</code></h4>
 <pre><code class="language-go">package main
 
 import (
  &quot;fmt&quot;
- &quot;regexp&quot;
- &quot;strings&quot;
-
- &quot;github.com/evanw/esbuild/pkg/api&quot;
+ &quot;github.com/spf13/cobra&quot;
 )
 
 func main() {
- // Sample TSX input
- tsxCode := `
-import &quot;./style.scss&quot;;
+ var name string
+ var age int
 
-// @GO
-
-const Layout = (props) =&gt; (
-  &lt;div&gt;
-    &lt;header&gt;Head&lt;/header&gt;
-    &lt;main&gt;{props.children}&lt;/main&gt;
-    &lt;footer&gt;Head&lt;/footer&gt;
-  &lt;/div&gt;
-);
-
-export default function Button(props) {
- const regexNoReplace = &quot;export default&quot;
-  return (
-    &lt;Layout x-html {...props} class={[$NAME, props.class]}&gt;
-      {props.children}
-    &lt;/Layout&gt;
-  );
-}
-
-    `
-
- customizedCode := componentJSX(&quot;Component&quot;, tsxCode)
- fmt.Println(&quot;Transformed Code:&quot;)
- fmt.Println(customizedCode)
-}
-
-func parseTSX(input string, methodName string, minify bool) string {
- if methodName == &quot;&quot; {
-  methodName = &quot;React.createElement&quot; // Default value
+ // Define the root command
+ var rootCmd = &amp;cobra.Command{
+  Use:   &quot;greet&quot;,
+  Short: &quot;A simple greeting app&quot;,
+  Run: func(cmd *cobra.Command, args []string) {
+   fmt.Printf(&quot;Hello, %s! You are %d years old.\n&quot;, name, age)
+  },
  }
 
- // Transform TSX to JavaScript
- result := api.Transform(input, api.TransformOptions{
-  Loader: api.LoaderTSX,    // Set the loader to TSX
-  JSX:    api.JSXTransform, // Enable JSX transformation
-  Format: api.FormatESModule,
- })
+ // Define flags for the root command
+ rootCmd.Flags().StringVarP(&amp;name, &quot;name&quot;, &quot;n&quot;, &quot;World&quot;, &quot;Name to greet&quot;)
+ rootCmd.Flags().IntVarP(&amp;age, &quot;age&quot;, &quot;a&quot;, 0, &quot;Age of the person&quot;)
 
- if len(result.Errors) &gt; 0 {
-  fmt.Println(&quot;Errors:&quot;, result.Errors)
-  return &quot;&quot;
+ // Execute the root command
+ if err := rootCmd.Execute(); err != nil {
+  fmt.Println(err)
  }
-
- // Replace `/* @__PURE__ */ React.createElement` with a custom function
- transformedCode := string(result.Code)
- customizedCode := strings.ReplaceAll(
-  transformedCode,
-  &quot;/* @__PURE__ */ React.createElement&quot;,
-  methodName,
- )
-
- if minify {
-  return minifyJS(customizedCode)
- }
-
- return customizedCode
-}
-
-// componentJSX wraps a TSX transformation to create a reusable component function in JavaScript.
-// It generates a JavaScript function named after the provided `name` parameter and applies
-// the transformation and minification logic.
-//
-// Parameters:
-// - name: The name of the JavaScript function to be generated.
-// - input: The TSX input code to be processed.
-//
-// Returns:
-// - A minified JavaScript function string representing the transformed component.
-func componentJSX(name string, input string) string {
- // Fix Code Pre-String
- tsxCode := strings.Split(input, &quot;// @GO&quot;)[1]
- tsxCode = strings.TrimSpace(tsxCode)
-
- // Call the function to replace `export default` only at the start of a line
- tsxCode = replaceRegex(tsxCode, `(?m)^export default`, &quot;return&quot;)
- // Wrap the transformed code into a named component function
- tsxCode = fmt.Sprintf(&quot;const %s = (function() { %s })();&quot;, name, tsxCode)
-
- // Transform the input TSX and use &quot;h&quot; as the custom JSX pragma
- transformedCode := parseTSX(tsxCode, &quot;h&quot;, false)
-
- return minifyJS(transformedCode)
-}
-
-// minifyJS reduces the size of the given JavaScript code by applying whitespace,
-// identifier, and syntax minification using esbuild.
-//
-// Parameters:
-// - input: The JavaScript code to be minified.
-//
-// Returns:
-// - A minified JavaScript string, or an empty string if an error occurred.
-func minifyJS(input string) string {
- result := api.Transform(input, api.TransformOptions{
-  MinifyWhitespace:  true,
-  MinifyIdentifiers: true,
-  MinifySyntax:      true,
- })
-
- if len(result.Errors) &gt; 0 {
-  fmt.Println(&quot;Errors:&quot;, result.Errors)
-  return &quot;&quot;
- }
-
- return string(result.Code)
-}
-
-// replaceExportDefault replaces occurrences of &quot;export default&quot; with the given replacement
-// string, but only if &quot;export default&quot; is at the beginning of a line.
-//
-// Parameters:
-// - input: The input string containing code.
-// - replacement: The string to replace &quot;export default&quot; with.
-//
-// Returns:
-// - The updated string with replacements applied.
-func replaceRegex(input, query string, replacement string) string {
- // Regex pattern to match &quot;export default&quot; at the start of a line
- // `(?m)^export default`:
- //   - `(?m)`: Enables multiline mode to allow `^` to match the start of each line.
- //   - `^export default`: Matches &quot;export default&quot; at the beginning of a line.
- re := regexp.MustCompile(query)
-
- // Perform the replacement
- return re.ReplaceAllString(input, replacement)
 }
 </code></pre>
+<p>Usage:</p>
+<pre><code class="language-bash">go run main.go greet -n John -a 30
+</code></pre>
+<p>This would output:</p>
+<pre><code class="language-bash">Hello, John! You are 30 years old.
+</code></pre>
+<h3 id="3-go-osexec-for-running-other-scripts">3. <strong>Go + <code>os/exec</code> for Running Other Scripts</strong></h3>
+<p>Go can execute external scripts and commands using the <code>os/exec</code> package. This allows you to run shell scripts, Python scripts, or other programs from within your Go program.</p>
+<h4 id="example-running-a-shell-script-from-go">Example: Running a Shell Script from Go</h4>
+<pre><code class="language-go">package main
+
+import (
+ &quot;fmt&quot;
+ &quot;os/exec&quot;
+)
+
+func main() {
+ // Run a shell command (in this case, a simple &quot;ls&quot; command)
+ cmd := exec.Command(&quot;ls&quot;, &quot;-l&quot;)
+ output, err := cmd.CombinedOutput()
+ if err != nil {
+  fmt.Println(&quot;Error executing command:&quot;, err)
+  return
+ }
+
+ // Print the output of the command
+ fmt.Println(string(output))
+}
+</code></pre>
+<h3 id="conclusion">Conclusion</h3>
+<p>For Go scripting similar to Python's <code>argparse</code>, you can:</p>
+<ol>
+<li>Use Go’s built-in <code>flag</code> package for basic flag parsing.</li>
+<li>Use <code>cobra</code> for advanced features, including subcommands and dynamic argument parsing.</li>
+<li>Use <code>os/exec</code>: To run external scripts or commands.</li>
+</ol>
 
 
 
@@ -1496,7 +1703,7 @@ func replaceRegex(input, query string, replacement string) string {
       <nav class="md-footer__inner md-grid" aria-label="Footer" >
         
           
-          <a href="../goja/" class="md-footer__link md-footer__link--prev" aria-label="Previous: GOJA">
+          <a href="../../files/html_templates/" class="md-footer__link md-footer__link--prev" aria-label="Previous: HTML">
             <div class="md-footer__button md-icon">
               
               <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11z"/></svg>
@@ -1506,20 +1713,20 @@ func replaceRegex(input, query string, replacement string) string {
                 Previous
               </span>
               <div class="md-ellipsis">
-                GOJA
+                HTML
               </div>
             </div>
           </a>
         
         
           
-          <a href="../minify/" class="md-footer__link md-footer__link--next" aria-label="Next: Minify">
+          <a href="../../pythonic/any-dict-list/" class="md-footer__link md-footer__link--next" aria-label="Next: Any/Dict/List">
             <div class="md-footer__title">
               <span class="md-footer__direction">
                 Next
               </span>
               <div class="md-ellipsis">
-                Minify
+                Any/Dict/List
               </div>
             </div>
             <div class="md-footer__button md-icon">
@@ -1557,13 +1764,13 @@ func replaceRegex(input, query string, replacement string) string {
     </div>
     
     
-    <script id="__config" type="application/json">{"base": "../../..", "features": ["content.code.annotate", "content.code.copy", "content.tooltips", "navigation.expand", "navigation.instant", "navigation.sections", "navigation.tabs", "navigation.top", "navigation.tracking", "navigation.footer"], "search": "../../../assets/javascripts/workers/search.6ce7567c.min.js", "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}}</script>
+    <script id="__config" type="application/json">{"base": "../..", "features": ["content.code.annotate", "content.code.copy", "content.tooltips", "navigation.expand", "navigation.instant", "navigation.sections", "navigation.tabs", "navigation.top", "navigation.tracking", "navigation.footer"], "search": "../../assets/javascripts/workers/search.6ce7567c.min.js", "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}}</script>
     
     
 
-      <script src="../../../assets/javascripts/bundle.83f73b43.min.js"></script>
+      <script src="../../assets/javascripts/bundle.83f73b43.min.js"></script>
       
-        <script src="../../../plugins/prism/index.js"></script>
+        <script src="../../plugins/prism/index.js"></script>
       
     
 
