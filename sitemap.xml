@@ -2,110 +2,122 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
     <url>
          <loc>https://hlop3z.github.io/go-learn/</loc>
-         <lastmod>2024-11-30</lastmod>
+         <lastmod>2025-04-27</lastmod>
     </url>
     <url>
          <loc>https://hlop3z.github.io/go-learn/datetime/</loc>
-         <lastmod>2024-11-30</lastmod>
+         <lastmod>2025-04-27</lastmod>
     </url>
     <url>
          <loc>https://hlop3z.github.io/go-learn/docstring/</loc>
-         <lastmod>2024-11-30</lastmod>
+         <lastmod>2025-04-27</lastmod>
     </url>
     <url>
          <loc>https://hlop3z.github.io/go-learn/for-loops/</loc>
-         <lastmod>2024-11-30</lastmod>
+         <lastmod>2025-04-27</lastmod>
     </url>
     <url>
          <loc>https://hlop3z.github.io/go-learn/if-blocks/</loc>
-         <lastmod>2024-11-30</lastmod>
+         <lastmod>2025-04-27</lastmod>
     </url>
     <url>
          <loc>https://hlop3z.github.io/go-learn/naming_conventions/</loc>
-         <lastmod>2024-11-30</lastmod>
+         <lastmod>2025-04-27</lastmod>
     </url>
     <url>
          <loc>https://hlop3z.github.io/go-learn/strings/</loc>
-         <lastmod>2024-11-30</lastmod>
+         <lastmod>2025-04-27</lastmod>
     </url>
     <url>
          <loc>https://hlop3z.github.io/go-learn/types/</loc>
-         <lastmod>2024-11-30</lastmod>
+         <lastmod>2025-04-27</lastmod>
     </url>
     <url>
          <loc>https://hlop3z.github.io/go-learn/union-any/</loc>
-         <lastmod>2024-11-30</lastmod>
+         <lastmod>2025-04-27</lastmod>
     </url>
     <url>
          <loc>https://hlop3z.github.io/go-learn/variables/</loc>
-         <lastmod>2024-11-30</lastmod>
+         <lastmod>2025-04-27</lastmod>
     </url>
     <url>
          <loc>https://hlop3z.github.io/go-learn/advanced/cli/</loc>
-         <lastmod>2024-11-30</lastmod>
+         <lastmod>2025-04-27</lastmod>
+    </url>
+    <url>
+         <loc>https://hlop3z.github.io/go-learn/advanced/pointers/</loc>
+         <lastmod>2025-04-27</lastmod>
     </url>
     <url>
          <loc>https://hlop3z.github.io/go-learn/files/encoders/</loc>
-         <lastmod>2024-11-30</lastmod>
+         <lastmod>2025-04-27</lastmod>
     </url>
     <url>
          <loc>https://hlop3z.github.io/go-learn/files/files/</loc>
-         <lastmod>2024-11-30</lastmod>
+         <lastmod>2025-04-27</lastmod>
     </url>
     <url>
          <loc>https://hlop3z.github.io/go-learn/files/html_templates/</loc>
-         <lastmod>2024-11-30</lastmod>
+         <lastmod>2025-04-27</lastmod>
     </url>
     <url>
          <loc>https://hlop3z.github.io/go-learn/files/json_load_dump/</loc>
-         <lastmod>2024-11-30</lastmod>
+         <lastmod>2025-04-27</lastmod>
     </url>
     <url>
          <loc>https://hlop3z.github.io/go-learn/numbers/limits/</loc>
-         <lastmod>2024-11-30</lastmod>
+         <lastmod>2025-04-27</lastmod>
     </url>
     <url>
          <loc>https://hlop3z.github.io/go-learn/packages/layout/</loc>
-         <lastmod>2024-11-30</lastmod>
+         <lastmod>2025-04-27</lastmod>
+    </url>
+    <url>
+         <loc>https://hlop3z.github.io/go-learn/packages/domains/web/</loc>
+         <lastmod>2025-04-27</lastmod>
     </url>
     <url>
          <loc>https://hlop3z.github.io/go-learn/packages/vendors/echo/</loc>
-         <lastmod>2024-11-30</lastmod>
+         <lastmod>2025-04-27</lastmod>
     </url>
     <url>
          <loc>https://hlop3z.github.io/go-learn/packages/vendors/esbuild/</loc>
-         <lastmod>2024-11-30</lastmod>
+         <lastmod>2025-04-27</lastmod>
     </url>
     <url>
          <loc>https://hlop3z.github.io/go-learn/packages/vendors/goja/</loc>
-         <lastmod>2024-11-30</lastmod>
+         <lastmod>2025-04-27</lastmod>
     </url>
     <url>
          <loc>https://hlop3z.github.io/go-learn/packages/vendors/gorm/</loc>
-         <lastmod>2024-11-30</lastmod>
+         <lastmod>2025-04-27</lastmod>
     </url>
     <url>
          <loc>https://hlop3z.github.io/go-learn/packages/vendors/minify/</loc>
-         <lastmod>2024-11-30</lastmod>
+         <lastmod>2025-04-27</lastmod>
     </url>
     <url>
          <loc>https://hlop3z.github.io/go-learn/pythonic/any-dict-list/</loc>
-         <lastmod>2024-11-30</lastmod>
+         <lastmod>2025-04-27</lastmod>
     </url>
     <url>
          <loc>https://hlop3z.github.io/go-learn/pythonic/data-types/</loc>
-         <lastmod>2024-11-30</lastmod>
+         <lastmod>2025-04-27</lastmod>
     </url>
     <url>
          <loc>https://hlop3z.github.io/go-learn/pythonic/decorators/</loc>
-         <lastmod>2024-11-30</lastmod>
+         <lastmod>2025-04-27</lastmod>
     </url>
     <url>
          <loc>https://hlop3z.github.io/go-learn/pythonic/kwargs/</loc>
-         <lastmod>2024-11-30</lastmod>
+         <lastmod>2025-04-27</lastmod>
     </url>
     <url>
          <loc>https://hlop3z.github.io/go-learn/pythonic/operators/</loc>
-         <lastmod>2024-11-30</lastmod>
+         <lastmod>2025-04-27</lastmod>
+    </url>
+    <url>
+         <loc>https://hlop3z.github.io/go-learn/pythonic/strings/</loc>
+         <lastmod>2025-04-27</lastmod>
     </url>
 </urlset>

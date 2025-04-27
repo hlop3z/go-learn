@@ -8,29 +8,29 @@
       
       
       
-        <link rel="canonical" href="https://hlop3z.github.io/go-learn/docstring/">
+        <link rel="canonical" href="https://hlop3z.github.io/go-learn/packages/domains/web/">
       
       
-        <link rel="prev" href="../naming_conventions/">
+        <link rel="prev" href="../../layout/">
       
       
-        <link rel="next" href="../strings/">
+        <link rel="next" href="../../vendors/echo/">
       
       
-      <link rel="icon" href="../assets/images/favicon.png">
+      <link rel="icon" href="../../../assets/images/favicon.png">
       <meta name="generator" content="mkdocs-1.6.1, mkdocs-material-9.6.12">
     
     
       
-        <title>Docstring - Go Notes</title>
+        <title>Web - Go Notes</title>
       
     
     
 
-      <link rel="stylesheet" href="../assets/stylesheets/main.2afb09e1.min.css">
+      <link rel="stylesheet" href="../../../assets/stylesheets/main.2afb09e1.min.css">
       
         
-        <link rel="stylesheet" href="../assets/stylesheets/palette.06af60db.min.css">
+        <link rel="stylesheet" href="../../../assets/stylesheets/palette.06af60db.min.css">
       
       
 
@@ -52,9 +52,9 @@
       
     
     
-      <link rel="stylesheet" href="../css/extra.css">
+      <link rel="stylesheet" href="../../../css/extra.css">
     
-    <script>__md_scope=new URL("..",location),__md_hash=e=>[...e].reduce(((e,_)=>(e<<5)-e+_.charCodeAt(0)),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+    <script>__md_scope=new URL("../../..",location),__md_hash=e=>[...e].reduce(((e,_)=>(e<<5)-e+_.charCodeAt(0)),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
     
       
 
@@ -80,7 +80,7 @@
     <div data-md-component="skip">
       
         
-        <a href="#go-docstring" class="md-skip">
+        <a href="#web-frameworks" class="md-skip">
           Skip to content
         </a>
       
@@ -94,7 +94,7 @@
 
 <header class="md-header" data-md-component="header">
   <nav class="md-header__inner md-grid" aria-label="Header">
-    <a href=".." title="Go Notes" class="md-header__button md-logo" aria-label="Go Notes" data-md-component="logo">
+    <a href="../../.." title="Go Notes" class="md-header__button md-logo" aria-label="Go Notes" data-md-component="logo">
       
   
   <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M10.46 19C9 21.07 6.15 21.59 4.09 20.15c-2.05-1.44-2.53-4.31-1.09-6.4a4.59 4.59 0 0 1 3.58-1.98l.05 1.43c-.91.07-1.79.54-2.36 1.36-1 1.44-.69 3.38.68 4.35 1.38.96 3.31.59 4.31-.84.31-.45.49-.94.56-1.44v-1.01l5.58-.04.07-.11c.53-.92 1.68-1.24 2.58-.72a1.9 1.9 0 0 1 .68 2.6c-.53.91-1.69 1.23-2.59.71-.41-.23-.7-.6-.83-1.02l-4.07.02a5 5 0 0 1-.78 1.94m7.28-7.14c2.53.31 4.33 2.58 4.02 5.07-.31 2.5-2.61 4.27-5.14 3.96a4.63 4.63 0 0 1-3.43-2.21l1.24-.72a3.22 3.22 0 0 0 2.32 1.45c1.75.21 3.3-.98 3.51-2.65s-1.03-3.2-2.76-3.41c-.54-.06-1.06.01-1.53.18l-.85.44-2.58-4.77h-.22a1.906 1.906 0 0 1-1.85-1.95c.03-1.04.93-1.85 1.98-1.81 1.05.06 1.88.91 1.85 1.95-.02.44-.19.84-.46 1.15l1.9 3.51c.62-.2 1.3-.27 2-.19M8.25 9.14c-1-2.35.06-5.04 2.37-6.02 2.32-.98 5 .13 6 2.48.59 1.37.47 2.87-.2 4.07l-1.24-.72c.42-.81.49-1.8.09-2.73-.68-1.6-2.49-2.37-4.04-1.72-1.56.66-2.26 2.5-1.58 4.1.28.66.75 1.17 1.32 1.51l.39.21-3.07 4.99c.03.05.07.11.1.19.49.91.15 2.06-.77 2.55-.91.49-2.06.13-2.56-.81-.49-.93-.15-2.08.77-2.57.39-.21.82-.26 1.23-.17l2.31-3.77c-.47-.43-.87-.97-1.12-1.59"/></svg>
@@ -114,7 +114,7 @@
         <div class="md-header__topic" data-md-component="header-topic">
           <span class="md-ellipsis">
             
-              Docstring
+              Web
             
           </span>
         </div>
@@ -223,13 +223,11 @@
   
   
   
-    
-  
   
     
     
-      <li class="md-tabs__item md-tabs__item--active">
-        <a href=".." class="md-tabs__link">
+      <li class="md-tabs__item">
+        <a href="../../.." class="md-tabs__link">
           
   
   
@@ -245,11 +243,13 @@
   
   
   
+    
+  
   
     
     
-      <li class="md-tabs__item">
-        <a href="../packages/layout/" class="md-tabs__link">
+      <li class="md-tabs__item md-tabs__item--active">
+        <a href="../../layout/" class="md-tabs__link">
           
   
   
@@ -283,7 +283,7 @@
 
 <nav class="md-nav md-nav--primary md-nav--lifted" aria-label="Navigation" data-md-level="0">
   <label class="md-nav__title" for="__drawer">
-    <a href=".." title="Go Notes" class="md-nav__button md-logo" aria-label="Go Notes" data-md-component="logo">
+    <a href="../../.." title="Go Notes" class="md-nav__button md-logo" aria-label="Go Notes" data-md-component="logo">
       
   
   <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M10.46 19C9 21.07 6.15 21.59 4.09 20.15c-2.05-1.44-2.53-4.31-1.09-6.4a4.59 4.59 0 0 1 3.58-1.98l.05 1.43c-.91.07-1.79.54-2.36 1.36-1 1.44-.69 3.38.68 4.35 1.38.96 3.31.59 4.31-.84.31-.45.49-.94.56-1.44v-1.01l5.58-.04.07-.11c.53-.92 1.68-1.24 2.58-.72a1.9 1.9 0 0 1 .68 2.6c-.53.91-1.69 1.23-2.59.71-.41-.23-.7-.6-.83-1.02l-4.07.02a5 5 0 0 1-.78 1.94m7.28-7.14c2.53.31 4.33 2.58 4.02 5.07-.31 2.5-2.61 4.27-5.14 3.96a4.63 4.63 0 0 1-3.43-2.21l1.24-.72a3.22 3.22 0 0 0 2.32 1.45c1.75.21 3.3-.98 3.51-2.65s-1.03-3.2-2.76-3.41c-.54-.06-1.06.01-1.53.18l-.85.44-2.58-4.77h-.22a1.906 1.906 0 0 1-1.85-1.95c.03-1.04.93-1.85 1.98-1.81 1.05.06 1.88.91 1.85 1.95-.02.44-.19.84-.46 1.15l1.9 3.51c.62-.2 1.3-.27 2-.19M8.25 9.14c-1-2.35.06-5.04 2.37-6.02 2.32-.98 5 .13 6 2.48.59 1.37.47 2.87-.2 4.07l-1.24-.72c.42-.81.49-1.8.09-2.73-.68-1.6-2.49-2.37-4.04-1.72-1.56.66-2.26 2.5-1.58 4.1.28.66.75 1.17 1.32 1.51l.39.21-3.07 4.99c.03.05.07.11.1.19.49.91.15 2.06-.77 2.55-.91.49-2.06.13-2.56-.81-.49-.93-.15-2.08.77-2.57.39-.21.82-.26 1.23-.17l2.31-3.77c-.47-.43-.87-.97-1.12-1.59"/></svg>
@@ -310,31 +310,28 @@
       
   
   
-    
   
   
-  
     
     
     
     
-      
-        
-        
       
       
         
       
     
     
-    <li class="md-nav__item md-nav__item--active md-nav__item--section md-nav__item--nested">
+    <li class="md-nav__item md-nav__item--nested">
       
         
-        
-        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_1" checked>
         
           
-          <label class="md-nav__link" for="__nav_1" id="__nav_1_label" tabindex="">
+        
+        <input class="md-nav__toggle md-toggle md-toggle--indeterminate" type="checkbox" id="__nav_1" >
+        
+          
+          <label class="md-nav__link" for="__nav_1" id="__nav_1_label" tabindex="0">
             
   
   
@@ -347,7 +344,7 @@
             <span class="md-nav__icon md-icon"></span>
           </label>
         
-        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_1_label" aria-expanded="true">
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_1_label" aria-expanded="false">
           <label class="md-nav__title" for="__nav_1">
             <span class="md-nav__icon md-icon"></span>
             Go Lang
@@ -361,7 +358,7 @@
   
   
     <li class="md-nav__item">
-      <a href=".." class="md-nav__link">
+      <a href="../../.." class="md-nav__link">
         
   
   
@@ -384,7 +381,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../types/" class="md-nav__link">
+      <a href="../../../types/" class="md-nav__link">
         
   
   
@@ -407,7 +404,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../variables/" class="md-nav__link">
+      <a href="../../../variables/" class="md-nav__link">
         
   
   
@@ -430,7 +427,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../naming_conventions/" class="md-nav__link">
+      <a href="../../../naming_conventions/" class="md-nav__link">
         
   
   
@@ -450,32 +447,10 @@
                 
   
   
-    
   
   
-  
-    <li class="md-nav__item md-nav__item--active">
-      
-      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
-      
-      
-        
-      
-      
-        <label class="md-nav__link md-nav__link--active" for="__toc">
-          
-  
-  
-  <span class="md-ellipsis">
-    Docstring
-    
-  </span>
-  
-
-          <span class="md-nav__icon md-icon"></span>
-        </label>
-      
-      <a href="./" class="md-nav__link md-nav__link--active">
+    <li class="md-nav__item">
+      <a href="../../../docstring/" class="md-nav__link">
         
   
   
@@ -486,44 +461,6 @@
   
 
       </a>
-      
-        
-
-<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
-  
-  
-  
-    
-  
-  
-    <label class="md-nav__title" for="__toc">
-      <span class="md-nav__icon md-icon"></span>
-      Table of contents
-    </label>
-    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
-      
-        <li class="md-nav__item">
-  <a href="#key-elements-of-multi-line-documentation" class="md-nav__link">
-    <span class="md-ellipsis">
-      Key Elements of Multi-line Documentation
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#notes" class="md-nav__link">
-    <span class="md-ellipsis">
-      Notes
-    </span>
-  </a>
-  
-</li>
-      
-    </ul>
-  
-</nav>
-      
     </li>
   
 
@@ -542,13 +479,10 @@
       
       
         
-          
-          
-        
       
     
     
-    <li class="md-nav__item md-nav__item--section md-nav__item--nested">
+    <li class="md-nav__item md-nav__item--nested">
       
         
         
@@ -557,7 +491,7 @@
         <input class="md-nav__toggle md-toggle md-toggle--indeterminate" type="checkbox" id="__nav_1_6" >
         
           
-          <label class="md-nav__link" for="__nav_1_6" id="__nav_1_6_label" tabindex="">
+          <label class="md-nav__link" for="__nav_1_6" id="__nav_1_6_label" tabindex="0">
             
   
   
@@ -584,7 +518,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../strings/" class="md-nav__link">
+      <a href="../../../strings/" class="md-nav__link">
         
   
   
@@ -607,7 +541,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../datetime/" class="md-nav__link">
+      <a href="../../../datetime/" class="md-nav__link">
         
   
   
@@ -630,7 +564,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../if-blocks/" class="md-nav__link">
+      <a href="../../../if-blocks/" class="md-nav__link">
         
   
   
@@ -653,7 +587,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../for-loops/" class="md-nav__link">
+      <a href="../../../for-loops/" class="md-nav__link">
         
   
   
@@ -676,7 +610,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../union-any/" class="md-nav__link">
+      <a href="../../../union-any/" class="md-nav__link">
         
   
   
@@ -713,13 +647,10 @@
       
       
         
-          
-          
-        
       
     
     
-    <li class="md-nav__item md-nav__item--section md-nav__item--nested">
+    <li class="md-nav__item md-nav__item--nested">
       
         
         
@@ -728,7 +659,7 @@
         <input class="md-nav__toggle md-toggle md-toggle--indeterminate" type="checkbox" id="__nav_1_7" >
         
           
-          <label class="md-nav__link" for="__nav_1_7" id="__nav_1_7_label" tabindex="">
+          <label class="md-nav__link" for="__nav_1_7" id="__nav_1_7_label" tabindex="0">
             
   
   
@@ -755,7 +686,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../numbers/limits/" class="md-nav__link">
+      <a href="../../../numbers/limits/" class="md-nav__link">
         
   
   
@@ -792,13 +723,10 @@
       
       
         
-          
-          
-        
       
     
     
-    <li class="md-nav__item md-nav__item--section md-nav__item--nested">
+    <li class="md-nav__item md-nav__item--nested">
       
         
         
@@ -807,7 +735,7 @@
         <input class="md-nav__toggle md-toggle md-toggle--indeterminate" type="checkbox" id="__nav_1_8" >
         
           
-          <label class="md-nav__link" for="__nav_1_8" id="__nav_1_8_label" tabindex="">
+          <label class="md-nav__link" for="__nav_1_8" id="__nav_1_8_label" tabindex="0">
             
   
   
@@ -834,7 +762,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../files/files/" class="md-nav__link">
+      <a href="../../../files/files/" class="md-nav__link">
         
   
   
@@ -857,7 +785,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../files/encoders/" class="md-nav__link">
+      <a href="../../../files/encoders/" class="md-nav__link">
         
   
   
@@ -880,7 +808,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../files/json_load_dump/" class="md-nav__link">
+      <a href="../../../files/json_load_dump/" class="md-nav__link">
         
   
   
@@ -903,7 +831,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../files/html_templates/" class="md-nav__link">
+      <a href="../../../files/html_templates/" class="md-nav__link">
         
   
   
@@ -940,13 +868,10 @@
       
       
         
-          
-          
-        
       
     
     
-    <li class="md-nav__item md-nav__item--section md-nav__item--nested">
+    <li class="md-nav__item md-nav__item--nested">
       
         
         
@@ -955,7 +880,7 @@
         <input class="md-nav__toggle md-toggle md-toggle--indeterminate" type="checkbox" id="__nav_1_9" >
         
           
-          <label class="md-nav__link" for="__nav_1_9" id="__nav_1_9_label" tabindex="">
+          <label class="md-nav__link" for="__nav_1_9" id="__nav_1_9_label" tabindex="0">
             
   
   
@@ -982,7 +907,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../advanced/cli/" class="md-nav__link">
+      <a href="../../../advanced/cli/" class="md-nav__link">
         
   
   
@@ -1019,13 +944,10 @@
       
       
         
-          
-          
-        
       
     
     
-    <li class="md-nav__item md-nav__item--section md-nav__item--nested">
+    <li class="md-nav__item md-nav__item--nested">
       
         
         
@@ -1034,7 +956,7 @@
         <input class="md-nav__toggle md-toggle md-toggle--indeterminate" type="checkbox" id="__nav_1_10" >
         
           
-          <label class="md-nav__link" for="__nav_1_10" id="__nav_1_10_label" tabindex="">
+          <label class="md-nav__link" for="__nav_1_10" id="__nav_1_10_label" tabindex="0">
             
   
   
@@ -1061,7 +983,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../pythonic/strings/" class="md-nav__link">
+      <a href="../../../pythonic/strings/" class="md-nav__link">
         
   
   
@@ -1084,7 +1006,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../pythonic/any-dict-list/" class="md-nav__link">
+      <a href="../../../pythonic/any-dict-list/" class="md-nav__link">
         
   
   
@@ -1107,7 +1029,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../pythonic/kwargs/" class="md-nav__link">
+      <a href="../../../pythonic/kwargs/" class="md-nav__link">
         
   
   
@@ -1130,7 +1052,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../pythonic/decorators/" class="md-nav__link">
+      <a href="../../../pythonic/decorators/" class="md-nav__link">
         
   
   
@@ -1153,7 +1075,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../pythonic/data-types/" class="md-nav__link">
+      <a href="../../../pythonic/data-types/" class="md-nav__link">
         
   
   
@@ -1176,7 +1098,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../pythonic/operators/" class="md-nav__link">
+      <a href="../../../pythonic/operators/" class="md-nav__link">
         
   
   
@@ -1211,28 +1133,31 @@
       
   
   
+    
   
   
+  
     
     
     
     
+      
+        
+        
       
       
         
       
     
     
-    <li class="md-nav__item md-nav__item--nested">
+    <li class="md-nav__item md-nav__item--active md-nav__item--section md-nav__item--nested">
       
         
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2" checked>
         
           
-        
-        <input class="md-nav__toggle md-toggle md-toggle--indeterminate" type="checkbox" id="__nav_2" >
-        
-          
-          <label class="md-nav__link" for="__nav_2" id="__nav_2_label" tabindex="0">
+          <label class="md-nav__link" for="__nav_2" id="__nav_2_label" tabindex="">
             
   
   
@@ -1245,7 +1170,7 @@
             <span class="md-nav__icon md-icon"></span>
           </label>
         
-        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_2_label" aria-expanded="false">
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_2_label" aria-expanded="true">
           <label class="md-nav__title" for="__nav_2">
             <span class="md-nav__icon md-icon"></span>
             Packages
@@ -1259,7 +1184,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../packages/layout/" class="md-nav__link">
+      <a href="../../layout/" class="md-nav__link">
         
   
   
@@ -1279,28 +1204,31 @@
                 
   
   
+    
   
   
+  
     
     
     
     
       
       
-        
-      
-    
-    
-    <li class="md-nav__item md-nav__item--nested">
-      
-        
         
           
+          
         
-        <input class="md-nav__toggle md-toggle md-toggle--indeterminate" type="checkbox" id="__nav_2_2" >
+      
+    
+    
+    <li class="md-nav__item md-nav__item--active md-nav__item--section md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2_2" checked>
         
           
-          <label class="md-nav__link" for="__nav_2_2" id="__nav_2_2_label" tabindex="0">
+          <label class="md-nav__link" for="__nav_2_2" id="__nav_2_2_label" tabindex="">
             
   
   
@@ -1313,7 +1241,7 @@
             <span class="md-nav__icon md-icon"></span>
           </label>
         
-        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_2_2_label" aria-expanded="false">
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_2_2_label" aria-expanded="true">
           <label class="md-nav__title" for="__nav_2_2">
             <span class="md-nav__icon md-icon"></span>
             Domains
@@ -1324,10 +1252,32 @@
                 
   
   
+    
   
   
-    <li class="md-nav__item">
-      <a href="../packages/domains/web/" class="md-nav__link">
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
+      
+      
+        
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          
+  
+  
+  <span class="md-ellipsis">
+    Web
+    
+  </span>
+  
+
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
         
   
   
@@ -1338,6 +1288,80 @@
   
 
       </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#summary-of-options" class="md-nav__link">
+    <span class="md-ellipsis">
+      Summary of Options
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#recommendation" class="md-nav__link">
+    <span class="md-ellipsis">
+      Recommendation:
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#1-nethttp-pure-go" class="md-nav__link">
+    <span class="md-ellipsis">
+      1. net/http (Pure Go)
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#2-gin" class="md-nav__link">
+    <span class="md-ellipsis">
+      2. Gin
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#3-echo" class="md-nav__link">
+    <span class="md-ellipsis">
+      3. Echo
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#4-chi" class="md-nav__link">
+    <span class="md-ellipsis">
+      4. Chi
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
     </li>
   
 
@@ -1364,10 +1388,13 @@
       
       
         
+          
+          
+        
       
     
     
-    <li class="md-nav__item md-nav__item--nested">
+    <li class="md-nav__item md-nav__item--section md-nav__item--nested">
       
         
         
@@ -1376,7 +1403,7 @@
         <input class="md-nav__toggle md-toggle md-toggle--indeterminate" type="checkbox" id="__nav_2_3" >
         
           
-          <label class="md-nav__link" for="__nav_2_3" id="__nav_2_3_label" tabindex="0">
+          <label class="md-nav__link" for="__nav_2_3" id="__nav_2_3_label" tabindex="">
             
   
   
@@ -1403,7 +1430,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../packages/vendors/echo/" class="md-nav__link">
+      <a href="../../vendors/echo/" class="md-nav__link">
         
   
   
@@ -1426,7 +1453,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../packages/vendors/gorm/" class="md-nav__link">
+      <a href="../../vendors/gorm/" class="md-nav__link">
         
   
   
@@ -1449,7 +1476,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../packages/vendors/goja/" class="md-nav__link">
+      <a href="../../vendors/goja/" class="md-nav__link">
         
   
   
@@ -1472,7 +1499,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../packages/vendors/esbuild/" class="md-nav__link">
+      <a href="../../vendors/esbuild/" class="md-nav__link">
         
   
   
@@ -1495,7 +1522,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../packages/vendors/minify/" class="md-nav__link">
+      <a href="../../vendors/minify/" class="md-nav__link">
         
   
   
@@ -1553,18 +1580,54 @@
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
       
         <li class="md-nav__item">
-  <a href="#key-elements-of-multi-line-documentation" class="md-nav__link">
+  <a href="#summary-of-options" class="md-nav__link">
     <span class="md-ellipsis">
-      Key Elements of Multi-line Documentation
+      Summary of Options
     </span>
   </a>
   
 </li>
       
         <li class="md-nav__item">
-  <a href="#notes" class="md-nav__link">
+  <a href="#recommendation" class="md-nav__link">
     <span class="md-ellipsis">
-      Notes
+      Recommendation:
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#1-nethttp-pure-go" class="md-nav__link">
+    <span class="md-ellipsis">
+      1. net/http (Pure Go)
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#2-gin" class="md-nav__link">
+    <span class="md-ellipsis">
+      2. Gin
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#3-echo" class="md-nav__link">
+    <span class="md-ellipsis">
+      3. Echo
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#4-chi" class="md-nav__link">
+    <span class="md-ellipsis">
+      4. Chi
     </span>
   </a>
   
@@ -1589,70 +1652,205 @@
   
 
 
-<h1 id="go-docstring">Go <code>docstring</code></h1>
-<p>The recommended approach in Go is to write the description in a <strong>docstring</strong> format, starting with a summary sentence on the first line, followed by more detailed explanations if needed. Here's an improved example with multi-line documentation:</p>
-<div class="language-go highlight"><pre><span></span><code><span id="__span-0-1"><a id="__codelineno-0-1" name="__codelineno-0-1" href="#__codelineno-0-1"></a><span class="kn">package</span><span class="w"> </span><span class="nx">main</span>
-</span><span id="__span-0-2"><a id="__codelineno-0-2" name="__codelineno-0-2" href="#__codelineno-0-2"></a>
-</span><span id="__span-0-3"><a id="__codelineno-0-3" name="__codelineno-0-3" href="#__codelineno-0-3"></a><span class="kn">import</span><span class="w"> </span><span class="s">&quot;fmt&quot;</span>
-</span><span id="__span-0-4"><a id="__codelineno-0-4" name="__codelineno-0-4" href="#__codelineno-0-4"></a>
-</span><span id="__span-0-5"><a id="__codelineno-0-5" name="__codelineno-0-5" href="#__codelineno-0-5"></a><span class="c1">// MaxAttempts defines the maximum number of allowed connection retries.</span>
-</span><span id="__span-0-6"><a id="__codelineno-0-6" name="__codelineno-0-6" href="#__codelineno-0-6"></a><span class="c1">// This constant is used in scenarios where we need to ensure a limit</span>
-</span><span id="__span-0-7"><a id="__codelineno-0-7" name="__codelineno-0-7" href="#__codelineno-0-7"></a><span class="c1">// on the number of attempts to avoid infinite retries in case of failure.</span>
-</span><span id="__span-0-8"><a id="__codelineno-0-8" name="__codelineno-0-8" href="#__codelineno-0-8"></a><span class="c1">// It can be utilized in both client-side and server-side applications</span>
-</span><span id="__span-0-9"><a id="__codelineno-0-9" name="__codelineno-0-9" href="#__codelineno-0-9"></a><span class="c1">// for handling retry mechanisms.</span>
-</span><span id="__span-0-10"><a id="__codelineno-0-10" name="__codelineno-0-10" href="#__codelineno-0-10"></a><span class="kd">const</span><span class="w"> </span><span class="nx">MaxAttempts</span><span class="w"> </span><span class="p">=</span><span class="w"> </span><span class="mi">5</span>
-</span><span id="__span-0-11"><a id="__codelineno-0-11" name="__codelineno-0-11" href="#__codelineno-0-11"></a>
-</span><span id="__span-0-12"><a id="__codelineno-0-12" name="__codelineno-0-12" href="#__codelineno-0-12"></a><span class="c1">// User represents a basic user in the system. It includes an ID and Name,</span>
-</span><span id="__span-0-13"><a id="__codelineno-0-13" name="__codelineno-0-13" href="#__codelineno-0-13"></a><span class="c1">// which are the essential attributes to identify and greet a user.</span>
-</span><span id="__span-0-14"><a id="__codelineno-0-14" name="__codelineno-0-14" href="#__codelineno-0-14"></a><span class="c1">// This struct can be expanded to include more fields such as email,</span>
-</span><span id="__span-0-15"><a id="__codelineno-0-15" name="__codelineno-0-15" href="#__codelineno-0-15"></a><span class="c1">// role, or other relevant user information as required by the application.</span>
-</span><span id="__span-0-16"><a id="__codelineno-0-16" name="__codelineno-0-16" href="#__codelineno-0-16"></a><span class="kd">type</span><span class="w"> </span><span class="nx">User</span><span class="w"> </span><span class="kd">struct</span><span class="w"> </span><span class="p">{</span>
-</span><span id="__span-0-17"><a id="__codelineno-0-17" name="__codelineno-0-17" href="#__codelineno-0-17"></a><span class="w">    </span><span class="nx">ID</span><span class="w">   </span><span class="kt">int</span><span class="w">    </span><span class="c1">// User ID, a unique identifier for each user.</span>
-</span><span id="__span-0-18"><a id="__codelineno-0-18" name="__codelineno-0-18" href="#__codelineno-0-18"></a><span class="w">    </span><span class="nx">Name</span><span class="w"> </span><span class="kt">string</span><span class="w"> </span><span class="c1">// User&#39;s name, which is used in greeting messages.</span>
-</span><span id="__span-0-19"><a id="__codelineno-0-19" name="__codelineno-0-19" href="#__codelineno-0-19"></a><span class="p">}</span>
-</span><span id="__span-0-20"><a id="__codelineno-0-20" name="__codelineno-0-20" href="#__codelineno-0-20"></a>
-</span><span id="__span-0-21"><a id="__codelineno-0-21" name="__codelineno-0-21" href="#__codelineno-0-21"></a><span class="c1">// Greet prints a personalized greeting message for the user.</span>
-</span><span id="__span-0-22"><a id="__codelineno-0-22" name="__codelineno-0-22" href="#__codelineno-0-22"></a><span class="c1">// It accepts a User type as input and prints a formatted message</span>
-</span><span id="__span-0-23"><a id="__codelineno-0-23" name="__codelineno-0-23" href="#__codelineno-0-23"></a><span class="c1">// to the console. This function can be expanded to include more</span>
-</span><span id="__span-0-24"><a id="__codelineno-0-24" name="__codelineno-0-24" href="#__codelineno-0-24"></a><span class="c1">// complex greeting logic, such as time-based greetings (morning, evening),</span>
-</span><span id="__span-0-25"><a id="__codelineno-0-25" name="__codelineno-0-25" href="#__codelineno-0-25"></a><span class="c1">// or localization support for multiple languages.</span>
-</span><span id="__span-0-26"><a id="__codelineno-0-26" name="__codelineno-0-26" href="#__codelineno-0-26"></a><span class="kd">func</span><span class="w"> </span><span class="nx">Greet</span><span class="p">(</span><span class="nx">user</span><span class="w"> </span><span class="nx">User</span><span class="p">)</span><span class="w"> </span><span class="p">{</span>
-</span><span id="__span-0-27"><a id="__codelineno-0-27" name="__codelineno-0-27" href="#__codelineno-0-27"></a><span class="w">    </span><span class="nx">fmt</span><span class="p">.</span><span class="nx">Printf</span><span class="p">(</span><span class="s">&quot;Hello, %s! Welcome to our service.\n&quot;</span><span class="p">,</span><span class="w"> </span><span class="nx">user</span><span class="p">.</span><span class="nx">Name</span><span class="p">)</span>
-</span><span id="__span-0-28"><a id="__codelineno-0-28" name="__codelineno-0-28" href="#__codelineno-0-28"></a><span class="p">}</span>
-</span><span id="__span-0-29"><a id="__codelineno-0-29" name="__codelineno-0-29" href="#__codelineno-0-29"></a>
-</span><span id="__span-0-30"><a id="__codelineno-0-30" name="__codelineno-0-30" href="#__codelineno-0-30"></a><span class="c1">// CalculateSum computes the sum of two integers and returns the result.</span>
-</span><span id="__span-0-31"><a id="__codelineno-0-31" name="__codelineno-0-31" href="#__codelineno-0-31"></a><span class="c1">// It is a simple utility function that adds two numbers together.</span>
-</span><span id="__span-0-32"><a id="__codelineno-0-32" name="__codelineno-0-32" href="#__codelineno-0-32"></a><span class="c1">// This function can be used in scenarios where you need to perform basic</span>
-</span><span id="__span-0-33"><a id="__codelineno-0-33" name="__codelineno-0-33" href="#__codelineno-0-33"></a><span class="c1">// arithmetic operations, and it could be extended for more complex math</span>
-</span><span id="__span-0-34"><a id="__codelineno-0-34" name="__codelineno-0-34" href="#__codelineno-0-34"></a><span class="c1">// operations if necessary.</span>
-</span><span id="__span-0-35"><a id="__codelineno-0-35" name="__codelineno-0-35" href="#__codelineno-0-35"></a><span class="kd">func</span><span class="w"> </span><span class="nx">CalculateSum</span><span class="p">(</span><span class="nx">a</span><span class="p">,</span><span class="w"> </span><span class="nx">b</span><span class="w"> </span><span class="kt">int</span><span class="p">)</span><span class="w"> </span><span class="kt">int</span><span class="w"> </span><span class="p">{</span>
-</span><span id="__span-0-36"><a id="__codelineno-0-36" name="__codelineno-0-36" href="#__codelineno-0-36"></a><span class="w">    </span><span class="k">return</span><span class="w"> </span><span class="nx">a</span><span class="w"> </span><span class="o">+</span><span class="w"> </span><span class="nx">b</span>
-</span><span id="__span-0-37"><a id="__codelineno-0-37" name="__codelineno-0-37" href="#__codelineno-0-37"></a><span class="p">}</span>
-</span><span id="__span-0-38"><a id="__codelineno-0-38" name="__codelineno-0-38" href="#__codelineno-0-38"></a>
-</span><span id="__span-0-39"><a id="__codelineno-0-39" name="__codelineno-0-39" href="#__codelineno-0-39"></a><span class="kd">func</span><span class="w"> </span><span class="nx">main</span><span class="p">()</span><span class="w"> </span><span class="p">{</span>
-</span><span id="__span-0-40"><a id="__codelineno-0-40" name="__codelineno-0-40" href="#__codelineno-0-40"></a><span class="w">    </span><span class="c1">// Example of using the User struct and Greet function.</span>
-</span><span id="__span-0-41"><a id="__codelineno-0-41" name="__codelineno-0-41" href="#__codelineno-0-41"></a><span class="w">    </span><span class="nx">user</span><span class="w"> </span><span class="o">:=</span><span class="w"> </span><span class="nx">User</span><span class="p">{</span><span class="nx">ID</span><span class="p">:</span><span class="w"> </span><span class="mi">1</span><span class="p">,</span><span class="w"> </span><span class="nx">Name</span><span class="p">:</span><span class="w"> </span><span class="s">&quot;Alice&quot;</span><span class="p">}</span>
-</span><span id="__span-0-42"><a id="__codelineno-0-42" name="__codelineno-0-42" href="#__codelineno-0-42"></a><span class="w">    </span><span class="nx">Greet</span><span class="p">(</span><span class="nx">user</span><span class="p">)</span>
-</span><span id="__span-0-43"><a id="__codelineno-0-43" name="__codelineno-0-43" href="#__codelineno-0-43"></a>
-</span><span id="__span-0-44"><a id="__codelineno-0-44" name="__codelineno-0-44" href="#__codelineno-0-44"></a><span class="w">    </span><span class="c1">// Example of using the CalculateSum function.</span>
-</span><span id="__span-0-45"><a id="__codelineno-0-45" name="__codelineno-0-45" href="#__codelineno-0-45"></a><span class="w">    </span><span class="nx">sum</span><span class="w"> </span><span class="o">:=</span><span class="w"> </span><span class="nx">CalculateSum</span><span class="p">(</span><span class="mi">10</span><span class="p">,</span><span class="w"> </span><span class="mi">20</span><span class="p">)</span>
-</span><span id="__span-0-46"><a id="__codelineno-0-46" name="__codelineno-0-46" href="#__codelineno-0-46"></a><span class="w">    </span><span class="nx">fmt</span><span class="p">.</span><span class="nx">Printf</span><span class="p">(</span><span class="s">&quot;Sum: %d\n&quot;</span><span class="p">,</span><span class="w"> </span><span class="nx">sum</span><span class="p">)</span>
-</span><span id="__span-0-47"><a id="__codelineno-0-47" name="__codelineno-0-47" href="#__codelineno-0-47"></a><span class="p">}</span>
-</span></code></pre></div>
-<h2 id="key-elements-of-multi-line-documentation">Key Elements of Multi-line Documentation</h2>
+<h1 id="web-frameworks">Web Frameworks</h1>
+<p>If you’re looking for the <strong>most lightweight</strong> tool to create APIs in Go, without adding too much overhead, <strong>Gin</strong> and <strong>Echo</strong> are the top contenders. However, if you're looking for <strong>something ultra-lightweight</strong>, here's a comparison along with some recommendation:</p>
+<hr />
+<h2 id="summary-of-options">Summary of Options</h2>
+<table>
+<thead>
+<tr>
+<th>Framework</th>
+<th>Lightweight?</th>
+<th>Features</th>
+<th>Use Case</th>
+<th>Pros</th>
+<th>Cons</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>Gin</strong></td>
+<td>Yes</td>
+<td>Routing, middleware, JSON</td>
+<td>RESTful APIs</td>
+<td>Very fast, minimalistic</td>
+<td>Somewhat opinionated</td>
+</tr>
+<tr>
+<td><strong>Echo</strong></td>
+<td>Yes</td>
+<td>Routing, middleware, WebSockets, validation</td>
+<td>RESTful, web apps</td>
+<td>Fast, easy-to-use</td>
+<td>More features than Gin</td>
+</tr>
+<tr>
+<td><strong>Chi</strong></td>
+<td>Yes</td>
+<td>Routing, middleware</td>
+<td>Microservices, small apps</td>
+<td>Minimalistic, extensible</td>
+<td>Needs more manual work for features</td>
+</tr>
+<tr>
+<td><strong>net/http</strong></td>
+<td>Yes</td>
+<td>Custom routing, manual setup</td>
+<td>Custom APIs</td>
+<td>No external dependencies</td>
+<td>Requires manual handling of routing, errors</td>
+</tr>
+</tbody>
+</table>
+<hr />
+<h2 id="recommendation"><strong>Recommendation:</strong></h2>
+<p>If you want the <strong>most lightweight solution</strong>:</p>
 <ol>
-<li><strong>Start with a brief summary</strong> on the first line. This will appear in GoDoc, so it should be succinct and give the reader an idea of what the constant, type, or function is doing.</li>
-<li>
-<p><strong>Expand with further details</strong> if necessary. After the first line, you can add more information, such as context, limitations, or intended use cases for constants and functions.</p>
-</li>
-<li>
-<p><strong>Be clear and concise</strong>: Avoid unnecessary verbosity, but do provide enough detail for the reader to understand how and when to use the constant, type, or function.</p>
-</li>
+<li><strong><code>net/http</code></strong> if you want zero dependencies and control over everything.</li>
+<li><strong><code>Chi</code></strong> if you want <strong>minimal routing</strong> and to add features only as needed (best for microservices).</li>
+<li><strong><code>Gin</code></strong> if you want <strong>performance</strong> with an out-of-the-box feature set (great balance).</li>
 </ol>
-<h2 id="notes">Notes</h2>
+<hr />
+<h2 id="1-nethttp-pure-go">1. <strong>net/http</strong> (Pure Go)</h2>
 <ul>
-<li><strong>GoDoc</strong> will automatically format these multi-line docstrings correctly, making it easy for developers to understand the code's purpose and usage directly from the documentation.</li>
-<li>For longer comments or when describing complex logic, always use a new line for each part of the explanation.</li>
+<li><strong>Purpose</strong>: Standard library package for HTTP servers.</li>
+<li><strong>Features</strong>:</li>
+<li><strong>No extra dependencies</strong>.</li>
+<li>Everything done by you: routing, request handling, middleware.</li>
+</ul>
+<div class="language-go highlight"><pre><span></span><code><span id="__span-0-1"><a id="__codelineno-0-1" name="__codelineno-0-1" href="#__codelineno-0-1"></a><span class="kn">import</span><span class="w"> </span><span class="p">(</span>
+</span><span id="__span-0-2"><a id="__codelineno-0-2" name="__codelineno-0-2" href="#__codelineno-0-2"></a><span class="w"> </span><span class="s">&quot;net/http&quot;</span>
+</span><span id="__span-0-3"><a id="__codelineno-0-3" name="__codelineno-0-3" href="#__codelineno-0-3"></a><span class="p">)</span>
+</span><span id="__span-0-4"><a id="__codelineno-0-4" name="__codelineno-0-4" href="#__codelineno-0-4"></a>
+</span><span id="__span-0-5"><a id="__codelineno-0-5" name="__codelineno-0-5" href="#__codelineno-0-5"></a><span class="kd">func</span><span class="w"> </span><span class="nx">main</span><span class="p">()</span><span class="w"> </span><span class="p">{</span>
+</span><span id="__span-0-6"><a id="__codelineno-0-6" name="__codelineno-0-6" href="#__codelineno-0-6"></a><span class="w"> </span><span class="nx">http</span><span class="p">.</span><span class="nx">HandleFunc</span><span class="p">(</span><span class="s">&quot;/hello&quot;</span><span class="p">,</span><span class="w"> </span><span class="kd">func</span><span class="p">(</span><span class="nx">w</span><span class="w"> </span><span class="nx">http</span><span class="p">.</span><span class="nx">ResponseWriter</span><span class="p">,</span><span class="w"> </span><span class="nx">r</span><span class="w"> </span><span class="o">*</span><span class="nx">http</span><span class="p">.</span><span class="nx">Request</span><span class="p">)</span><span class="w"> </span><span class="p">{</span>
+</span><span id="__span-0-7"><a id="__codelineno-0-7" name="__codelineno-0-7" href="#__codelineno-0-7"></a><span class="w">  </span><span class="nx">w</span><span class="p">.</span><span class="nx">Write</span><span class="p">([]</span><span class="nb">byte</span><span class="p">(</span><span class="s">&quot;Hello, World!&quot;</span><span class="p">))</span>
+</span><span id="__span-0-8"><a id="__codelineno-0-8" name="__codelineno-0-8" href="#__codelineno-0-8"></a><span class="w"> </span><span class="p">})</span>
+</span><span id="__span-0-9"><a id="__codelineno-0-9" name="__codelineno-0-9" href="#__codelineno-0-9"></a>
+</span><span id="__span-0-10"><a id="__codelineno-0-10" name="__codelineno-0-10" href="#__codelineno-0-10"></a><span class="w"> </span><span class="nx">http</span><span class="p">.</span><span class="nx">ListenAndServe</span><span class="p">(</span><span class="s">&quot;:8080&quot;</span><span class="p">,</span><span class="w"> </span><span class="kc">nil</span><span class="p">)</span>
+</span><span id="__span-0-11"><a id="__codelineno-0-11" name="__codelineno-0-11" href="#__codelineno-0-11"></a><span class="p">}</span>
+</span></code></pre></div>
+<p><strong>Pros:</strong></p>
+<ul>
+<li><strong>No dependencies</strong>.</li>
+<li>Ultra-lightweight and native Go.</li>
+</ul>
+<p><strong>Cons:</strong></p>
+<ul>
+<li><strong>Manually handle routing, error handling</strong>, etc.</li>
+<li><strong>Not as feature-rich</strong> as frameworks like Gin or Echo.</li>
+</ul>
+<hr />
+<h2 id="2-gin">2. <strong>Gin</strong></h2>
+<ul>
+<li><strong>Purpose</strong>: Fast, small, and high-performance web framework for Go.</li>
+<li>
+<p><strong>Features</strong>:</p>
+</li>
+<li>
+<p>Routing, middleware, JSON handling.</p>
+</li>
+<li>Built-in features for web APIs (JSON validation, rendering, etc.).</li>
+<li>Very fast (close to <code>net/http</code> speed).</li>
+<li>
+<p>Easy-to-use, good documentation.</p>
+</li>
+<li>
+<p><strong>Use Case</strong>: Perfect for building RESTful APIs, web services with minimal overhead.</p>
+</li>
+</ul>
+<div class="language-go highlight"><pre><span></span><code><span id="__span-1-1"><a id="__codelineno-1-1" name="__codelineno-1-1" href="#__codelineno-1-1"></a><span class="kn">import</span><span class="w"> </span><span class="p">(</span>
+</span><span id="__span-1-2"><a id="__codelineno-1-2" name="__codelineno-1-2" href="#__codelineno-1-2"></a><span class="w"> </span><span class="s">&quot;github.com/gin-gonic/gin&quot;</span>
+</span><span id="__span-1-3"><a id="__codelineno-1-3" name="__codelineno-1-3" href="#__codelineno-1-3"></a><span class="p">)</span>
+</span><span id="__span-1-4"><a id="__codelineno-1-4" name="__codelineno-1-4" href="#__codelineno-1-4"></a>
+</span><span id="__span-1-5"><a id="__codelineno-1-5" name="__codelineno-1-5" href="#__codelineno-1-5"></a><span class="kd">func</span><span class="w"> </span><span class="nx">main</span><span class="p">()</span><span class="w"> </span><span class="p">{</span>
+</span><span id="__span-1-6"><a id="__codelineno-1-6" name="__codelineno-1-6" href="#__codelineno-1-6"></a><span class="w"> </span><span class="nx">r</span><span class="w"> </span><span class="o">:=</span><span class="w"> </span><span class="nx">gin</span><span class="p">.</span><span class="nx">Default</span><span class="p">()</span>
+</span><span id="__span-1-7"><a id="__codelineno-1-7" name="__codelineno-1-7" href="#__codelineno-1-7"></a>
+</span><span id="__span-1-8"><a id="__codelineno-1-8" name="__codelineno-1-8" href="#__codelineno-1-8"></a><span class="w"> </span><span class="nx">r</span><span class="p">.</span><span class="nx">GET</span><span class="p">(</span><span class="s">&quot;/hello&quot;</span><span class="p">,</span><span class="w"> </span><span class="kd">func</span><span class="p">(</span><span class="nx">c</span><span class="w"> </span><span class="o">*</span><span class="nx">gin</span><span class="p">.</span><span class="nx">Context</span><span class="p">)</span><span class="w"> </span><span class="p">{</span>
+</span><span id="__span-1-9"><a id="__codelineno-1-9" name="__codelineno-1-9" href="#__codelineno-1-9"></a><span class="w">  </span><span class="nx">c</span><span class="p">.</span><span class="nx">JSON</span><span class="p">(</span><span class="mi">200</span><span class="p">,</span><span class="w"> </span><span class="nx">gin</span><span class="p">.</span><span class="nx">H</span><span class="p">{</span>
+</span><span id="__span-1-10"><a id="__codelineno-1-10" name="__codelineno-1-10" href="#__codelineno-1-10"></a><span class="w">   </span><span class="s">&quot;message&quot;</span><span class="p">:</span><span class="w"> </span><span class="s">&quot;Hello, World!&quot;</span><span class="p">,</span>
+</span><span id="__span-1-11"><a id="__codelineno-1-11" name="__codelineno-1-11" href="#__codelineno-1-11"></a><span class="w">  </span><span class="p">})</span>
+</span><span id="__span-1-12"><a id="__codelineno-1-12" name="__codelineno-1-12" href="#__codelineno-1-12"></a><span class="w"> </span><span class="p">})</span>
+</span><span id="__span-1-13"><a id="__codelineno-1-13" name="__codelineno-1-13" href="#__codelineno-1-13"></a>
+</span><span id="__span-1-14"><a id="__codelineno-1-14" name="__codelineno-1-14" href="#__codelineno-1-14"></a><span class="w"> </span><span class="nx">r</span><span class="p">.</span><span class="nx">Run</span><span class="p">(</span><span class="s">&quot;:8080&quot;</span><span class="p">)</span>
+</span><span id="__span-1-15"><a id="__codelineno-1-15" name="__codelineno-1-15" href="#__codelineno-1-15"></a><span class="p">}</span>
+</span></code></pre></div>
+<p><strong>Pros:</strong></p>
+<ul>
+<li><strong>Fast</strong> and <strong>simple</strong>.</li>
+<li>Good balance between features and performance.</li>
+</ul>
+<p><strong>Cons:</strong></p>
+<ul>
+<li><strong>Somewhat opinionated</strong> (but still lightweight).</li>
+</ul>
+<hr />
+<h2 id="3-echo">3. <strong>Echo</strong></h2>
+<ul>
+<li><strong>Purpose</strong>: Fast and minimalist web framework for Go.</li>
+<li><strong>Features</strong>:</li>
+<li>Router, middleware, request validation, and rendering.</li>
+<li>Also fast but with a little more structure than Gin.</li>
+<li>Supports HTTP/2, WebSockets, and more advanced features.</li>
+</ul>
+<div class="language-go highlight"><pre><span></span><code><span id="__span-2-1"><a id="__codelineno-2-1" name="__codelineno-2-1" href="#__codelineno-2-1"></a><span class="kn">import</span><span class="w"> </span><span class="p">(</span>
+</span><span id="__span-2-2"><a id="__codelineno-2-2" name="__codelineno-2-2" href="#__codelineno-2-2"></a><span class="w"> </span><span class="s">&quot;github.com/labstack/echo/v4&quot;</span>
+</span><span id="__span-2-3"><a id="__codelineno-2-3" name="__codelineno-2-3" href="#__codelineno-2-3"></a><span class="p">)</span>
+</span><span id="__span-2-4"><a id="__codelineno-2-4" name="__codelineno-2-4" href="#__codelineno-2-4"></a>
+</span><span id="__span-2-5"><a id="__codelineno-2-5" name="__codelineno-2-5" href="#__codelineno-2-5"></a><span class="kd">func</span><span class="w"> </span><span class="nx">main</span><span class="p">()</span><span class="w"> </span><span class="p">{</span>
+</span><span id="__span-2-6"><a id="__codelineno-2-6" name="__codelineno-2-6" href="#__codelineno-2-6"></a><span class="w"> </span><span class="nx">e</span><span class="w"> </span><span class="o">:=</span><span class="w"> </span><span class="nx">echo</span><span class="p">.</span><span class="nx">New</span><span class="p">()</span>
+</span><span id="__span-2-7"><a id="__codelineno-2-7" name="__codelineno-2-7" href="#__codelineno-2-7"></a>
+</span><span id="__span-2-8"><a id="__codelineno-2-8" name="__codelineno-2-8" href="#__codelineno-2-8"></a><span class="w"> </span><span class="nx">e</span><span class="p">.</span><span class="nx">GET</span><span class="p">(</span><span class="s">&quot;/hello&quot;</span><span class="p">,</span><span class="w"> </span><span class="kd">func</span><span class="p">(</span><span class="nx">c</span><span class="w"> </span><span class="nx">echo</span><span class="p">.</span><span class="nx">Context</span><span class="p">)</span><span class="w"> </span><span class="kt">error</span><span class="w"> </span><span class="p">{</span>
+</span><span id="__span-2-9"><a id="__codelineno-2-9" name="__codelineno-2-9" href="#__codelineno-2-9"></a><span class="w">  </span><span class="k">return</span><span class="w"> </span><span class="nx">c</span><span class="p">.</span><span class="nx">JSON</span><span class="p">(</span><span class="mi">200</span><span class="p">,</span><span class="w"> </span><span class="kd">map</span><span class="p">[</span><span class="kt">string</span><span class="p">]</span><span class="kt">string</span><span class="p">{</span>
+</span><span id="__span-2-10"><a id="__codelineno-2-10" name="__codelineno-2-10" href="#__codelineno-2-10"></a><span class="w">   </span><span class="s">&quot;message&quot;</span><span class="p">:</span><span class="w"> </span><span class="s">&quot;Hello, World!&quot;</span><span class="p">,</span>
+</span><span id="__span-2-11"><a id="__codelineno-2-11" name="__codelineno-2-11" href="#__codelineno-2-11"></a><span class="w">  </span><span class="p">})</span>
+</span><span id="__span-2-12"><a id="__codelineno-2-12" name="__codelineno-2-12" href="#__codelineno-2-12"></a><span class="w"> </span><span class="p">})</span>
+</span><span id="__span-2-13"><a id="__codelineno-2-13" name="__codelineno-2-13" href="#__codelineno-2-13"></a>
+</span><span id="__span-2-14"><a id="__codelineno-2-14" name="__codelineno-2-14" href="#__codelineno-2-14"></a><span class="w"> </span><span class="nx">e</span><span class="p">.</span><span class="nx">Logger</span><span class="p">.</span><span class="nx">Fatal</span><span class="p">(</span><span class="nx">e</span><span class="p">.</span><span class="nx">Start</span><span class="p">(</span><span class="s">&quot;:8080&quot;</span><span class="p">))</span>
+</span><span id="__span-2-15"><a id="__codelineno-2-15" name="__codelineno-2-15" href="#__codelineno-2-15"></a><span class="p">}</span>
+</span></code></pre></div>
+<p><strong>Pros:</strong></p>
+<ul>
+<li><strong>Fast</strong>, easy routing.</li>
+<li><strong>Good docs</strong> and slightly more structured than Gin.</li>
+</ul>
+<p><strong>Cons:</strong></p>
+<ul>
+<li><strong>A bit more features</strong> than Gin, though still very lightweight.</li>
+</ul>
+<hr />
+<h2 id="4-chi">4. <strong>Chi</strong></h2>
+<ul>
+<li><strong>Purpose</strong>: Ultra-lightweight router for Go.</li>
+<li><strong>Features</strong>:</li>
+<li>Focuses on <strong>routing</strong> and is <strong>incredibly minimal</strong>.</li>
+<li>Small memory footprint, works well for microservices.</li>
+<li><strong>Extensible</strong> with middleware (but you get to decide what you want).</li>
+</ul>
+<div class="language-go highlight"><pre><span></span><code><span id="__span-3-1"><a id="__codelineno-3-1" name="__codelineno-3-1" href="#__codelineno-3-1"></a><span class="kn">import</span><span class="w"> </span><span class="p">(</span>
+</span><span id="__span-3-2"><a id="__codelineno-3-2" name="__codelineno-3-2" href="#__codelineno-3-2"></a><span class="w"> </span><span class="s">&quot;github.com/go-chi/chi&quot;</span>
+</span><span id="__span-3-3"><a id="__codelineno-3-3" name="__codelineno-3-3" href="#__codelineno-3-3"></a><span class="w"> </span><span class="s">&quot;net/http&quot;</span>
+</span><span id="__span-3-4"><a id="__codelineno-3-4" name="__codelineno-3-4" href="#__codelineno-3-4"></a><span class="p">)</span>
+</span><span id="__span-3-5"><a id="__codelineno-3-5" name="__codelineno-3-5" href="#__codelineno-3-5"></a>
+</span><span id="__span-3-6"><a id="__codelineno-3-6" name="__codelineno-3-6" href="#__codelineno-3-6"></a><span class="kd">func</span><span class="w"> </span><span class="nx">main</span><span class="p">()</span><span class="w"> </span><span class="p">{</span>
+</span><span id="__span-3-7"><a id="__codelineno-3-7" name="__codelineno-3-7" href="#__codelineno-3-7"></a><span class="w"> </span><span class="nx">r</span><span class="w"> </span><span class="o">:=</span><span class="w"> </span><span class="nx">chi</span><span class="p">.</span><span class="nx">NewRouter</span><span class="p">()</span>
+</span><span id="__span-3-8"><a id="__codelineno-3-8" name="__codelineno-3-8" href="#__codelineno-3-8"></a>
+</span><span id="__span-3-9"><a id="__codelineno-3-9" name="__codelineno-3-9" href="#__codelineno-3-9"></a><span class="w"> </span><span class="nx">r</span><span class="p">.</span><span class="nx">Get</span><span class="p">(</span><span class="s">&quot;/hello&quot;</span><span class="p">,</span><span class="w"> </span><span class="kd">func</span><span class="p">(</span><span class="nx">w</span><span class="w"> </span><span class="nx">http</span><span class="p">.</span><span class="nx">ResponseWriter</span><span class="p">,</span><span class="w"> </span><span class="nx">r</span><span class="w"> </span><span class="o">*</span><span class="nx">http</span><span class="p">.</span><span class="nx">Request</span><span class="p">)</span><span class="w"> </span><span class="p">{</span>
+</span><span id="__span-3-10"><a id="__codelineno-3-10" name="__codelineno-3-10" href="#__codelineno-3-10"></a><span class="w">  </span><span class="nx">w</span><span class="p">.</span><span class="nx">Write</span><span class="p">([]</span><span class="nb">byte</span><span class="p">(</span><span class="s">&quot;Hello, World!&quot;</span><span class="p">))</span>
+</span><span id="__span-3-11"><a id="__codelineno-3-11" name="__codelineno-3-11" href="#__codelineno-3-11"></a><span class="w"> </span><span class="p">})</span>
+</span><span id="__span-3-12"><a id="__codelineno-3-12" name="__codelineno-3-12" href="#__codelineno-3-12"></a>
+</span><span id="__span-3-13"><a id="__codelineno-3-13" name="__codelineno-3-13" href="#__codelineno-3-13"></a><span class="w"> </span><span class="nx">http</span><span class="p">.</span><span class="nx">ListenAndServe</span><span class="p">(</span><span class="s">&quot;:8080&quot;</span><span class="p">,</span><span class="w"> </span><span class="nx">r</span><span class="p">)</span>
+</span><span id="__span-3-14"><a id="__codelineno-3-14" name="__codelineno-3-14" href="#__codelineno-3-14"></a><span class="p">}</span>
+</span></code></pre></div>
+<p><strong>Pros:</strong></p>
+<ul>
+<li><strong>Minimal</strong> — just routing, with extensible middleware.</li>
+<li>Great for very small services or microservices.</li>
+<li>Supports <strong>middleware</strong> and <strong>context</strong>.</li>
+</ul>
+<p><strong>Cons:</strong></p>
+<ul>
+<li><strong>Minimal</strong> by design, so you might need to implement some features manually.</li>
 </ul>
 
 
@@ -1689,7 +1887,7 @@
       <nav class="md-footer__inner md-grid" aria-label="Footer" >
         
           
-          <a href="../naming_conventions/" class="md-footer__link md-footer__link--prev" aria-label="Previous: Naming">
+          <a href="../../layout/" class="md-footer__link md-footer__link--prev" aria-label="Previous: Layout">
             <div class="md-footer__button md-icon">
               
               <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11z"/></svg>
@@ -1699,20 +1897,20 @@
                 Previous
               </span>
               <div class="md-ellipsis">
-                Naming
+                Layout
               </div>
             </div>
           </a>
         
         
           
-          <a href="../strings/" class="md-footer__link md-footer__link--next" aria-label="Next: Strings">
+          <a href="../../vendors/echo/" class="md-footer__link md-footer__link--next" aria-label="Next: ECHO">
             <div class="md-footer__title">
               <span class="md-footer__direction">
                 Next
               </span>
               <div class="md-ellipsis">
-                Strings
+                ECHO
               </div>
             </div>
             <div class="md-footer__button md-icon">
@@ -1752,11 +1950,11 @@
     
     
       
-      <script id="__config" type="application/json">{"base": "..", "features": ["content.code.annotate", "content.code.copy", "content.tooltips", "navigation.expand", "navigation.instant", "navigation.sections", "navigation.tabs", "navigation.top", "navigation.tracking", "navigation.footer"], "search": "../assets/javascripts/workers/search.f8cc74c7.min.js", "tags": null, "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}, "version": null}</script>
+      <script id="__config" type="application/json">{"base": "../../..", "features": ["content.code.annotate", "content.code.copy", "content.tooltips", "navigation.expand", "navigation.instant", "navigation.sections", "navigation.tabs", "navigation.top", "navigation.tracking", "navigation.footer"], "search": "../../../assets/javascripts/workers/search.f8cc74c7.min.js", "tags": null, "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}, "version": null}</script>
     
     
 
-      <script src="../assets/javascripts/bundle.c8b220af.min.js"></script>
+      <script src="../../../assets/javascripts/bundle.c8b220af.min.js"></script>
       
     
 

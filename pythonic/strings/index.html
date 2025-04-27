@@ -8,13 +8,13 @@
       
       
       
-        <link rel="canonical" href="https://hlop3z.github.io/go-learn/pythonic/decorators/">
+        <link rel="canonical" href="https://hlop3z.github.io/go-learn/pythonic/strings/">
       
       
-        <link rel="prev" href="../kwargs/">
+        <link rel="prev" href="../../advanced/cli/">
       
       
-        <link rel="next" href="../data-types/">
+        <link rel="next" href="../any-dict-list/">
       
       
       <link rel="icon" href="../../assets/images/favicon.png">
@@ -22,7 +22,7 @@
     
     
       
-        <title>Decorators - Go Notes</title>
+        <title>Strings - Go Notes</title>
       
     
     
@@ -80,7 +80,7 @@
     <div data-md-component="skip">
       
         
-        <a href="#decorators" class="md-skip">
+        <a href="#pythonic-string-search" class="md-skip">
           Skip to content
         </a>
       
@@ -114,7 +114,7 @@
         <div class="md-header__topic" data-md-component="header-topic">
           <span class="md-ellipsis">
             
-              Decorators
+              Strings
             
           </span>
         </div>
@@ -998,10 +998,19 @@
                 
   
   
+    
   
   
-    <li class="md-nav__item">
-      <a href="../strings/" class="md-nav__link">
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
+      
+      
+        
+      
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
         
   
   
@@ -1012,6 +1021,7 @@
   
 
       </a>
+      
     </li>
   
 
@@ -1067,32 +1077,10 @@
                 
   
   
-    
   
   
-  
-    <li class="md-nav__item md-nav__item--active">
-      
-      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
-      
-      
-        
-      
-      
-        <label class="md-nav__link md-nav__link--active" for="__toc">
-          
-  
-  
-  <span class="md-ellipsis">
-    Decorators
-    
-  </span>
-  
-
-          <span class="md-nav__icon md-icon"></span>
-        </label>
-      
-      <a href="./" class="md-nav__link md-nav__link--active">
+    <li class="md-nav__item">
+      <a href="../decorators/" class="md-nav__link">
         
   
   
@@ -1103,113 +1091,6 @@
   
 
       </a>
-      
-        
-
-<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
-  
-  
-  
-    
-  
-  
-    <label class="md-nav__title" for="__toc">
-      <span class="md-nav__icon md-icon"></span>
-      Table of contents
-    </label>
-    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
-      
-        <li class="md-nav__item">
-  <a href="#examples" class="md-nav__link">
-    <span class="md-ellipsis">
-      Examples
-    </span>
-  </a>
-  
-    <nav class="md-nav" aria-label="Examples">
-      <ul class="md-nav__list">
-        
-          <li class="md-nav__item">
-  <a href="#achieving-decorator-like-behavior-in-go" class="md-nav__link">
-    <span class="md-ellipsis">
-      Achieving Decorator-like Behavior in Go
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#example-1-wrapping-functions-like-a-decorator" class="md-nav__link">
-    <span class="md-ellipsis">
-      Example 1: Wrapping Functions (like a decorator)
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#explanation-1" class="md-nav__link">
-    <span class="md-ellipsis">
-      Explanation 1
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#example-2-wrapping-methods-with-closures" class="md-nav__link">
-    <span class="md-ellipsis">
-      Example 2: Wrapping Methods with Closures
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#example-3-wrapping-methods-with-interfaces" class="md-nav__link">
-    <span class="md-ellipsis">
-      Example 3: Wrapping Methods with Interfaces
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#explanation-3" class="md-nav__link">
-    <span class="md-ellipsis">
-      Explanation 3
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#differences-from-python-decorators" class="md-nav__link">
-    <span class="md-ellipsis">
-      Differences from Python Decorators
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#summary" class="md-nav__link">
-    <span class="md-ellipsis">
-      Summary
-    </span>
-  </a>
-  
-</li>
-        
-      </ul>
-    </nav>
-  
-</li>
-      
-    </ul>
-  
-</nav>
-      
     </li>
   
 
@@ -1615,101 +1496,6 @@
     
   
   
-    <label class="md-nav__title" for="__toc">
-      <span class="md-nav__icon md-icon"></span>
-      Table of contents
-    </label>
-    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
-      
-        <li class="md-nav__item">
-  <a href="#examples" class="md-nav__link">
-    <span class="md-ellipsis">
-      Examples
-    </span>
-  </a>
-  
-    <nav class="md-nav" aria-label="Examples">
-      <ul class="md-nav__list">
-        
-          <li class="md-nav__item">
-  <a href="#achieving-decorator-like-behavior-in-go" class="md-nav__link">
-    <span class="md-ellipsis">
-      Achieving Decorator-like Behavior in Go
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#example-1-wrapping-functions-like-a-decorator" class="md-nav__link">
-    <span class="md-ellipsis">
-      Example 1: Wrapping Functions (like a decorator)
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#explanation-1" class="md-nav__link">
-    <span class="md-ellipsis">
-      Explanation 1
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#example-2-wrapping-methods-with-closures" class="md-nav__link">
-    <span class="md-ellipsis">
-      Example 2: Wrapping Methods with Closures
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#example-3-wrapping-methods-with-interfaces" class="md-nav__link">
-    <span class="md-ellipsis">
-      Example 3: Wrapping Methods with Interfaces
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#explanation-3" class="md-nav__link">
-    <span class="md-ellipsis">
-      Explanation 3
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#differences-from-python-decorators" class="md-nav__link">
-    <span class="md-ellipsis">
-      Differences from Python Decorators
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#summary" class="md-nav__link">
-    <span class="md-ellipsis">
-      Summary
-    </span>
-  </a>
-  
-</li>
-        
-      </ul>
-    </nav>
-  
-</li>
-      
-    </ul>
-  
 </nav>
                   </div>
                 </div>
@@ -1727,128 +1513,43 @@
   
 
 
-<h1 id="decorators">Decorators</h1>
-<p>Go doesn't have decorators or wrappers in the same way Python does, but you can achieve similar functionality using <strong>higher-order functions</strong> (functions that take other functions as arguments or return them), <strong>closures</strong>, and <strong>interfaces</strong>.</p>
-<h2 id="examples">Examples</h2>
-<h3 id="achieving-decorator-like-behavior-in-go">Achieving Decorator-like Behavior in Go</h3>
-<ol>
-<li>
-<p><strong>Higher-order functions</strong>: In Go, you can pass functions as arguments to other functions, or return them. This lets you wrap or modify the behavior of a function.</p>
-</li>
-<li>
-<p><strong>Closures</strong>: You can create closures (functions that "remember" the environment in which they were created) that allow for wrapping functionality and preserving state.</p>
-</li>
-</ol>
-<h3 id="example-1-wrapping-functions-like-a-decorator">Example 1: Wrapping Functions (like a decorator)</h3>
+<h1 id="pythonic-string-search">Pythonic String Search</h1>
 <div class="language-go highlight"><pre><span></span><code><span id="__span-0-1"><a id="__codelineno-0-1" name="__codelineno-0-1" href="#__codelineno-0-1"></a><span class="kn">package</span><span class="w"> </span><span class="nx">main</span>
 </span><span id="__span-0-2"><a id="__codelineno-0-2" name="__codelineno-0-2" href="#__codelineno-0-2"></a>
-</span><span id="__span-0-3"><a id="__codelineno-0-3" name="__codelineno-0-3" href="#__codelineno-0-3"></a><span class="kn">import</span><span class="w"> </span><span class="s">&quot;fmt&quot;</span>
-</span><span id="__span-0-4"><a id="__codelineno-0-4" name="__codelineno-0-4" href="#__codelineno-0-4"></a>
-</span><span id="__span-0-5"><a id="__codelineno-0-5" name="__codelineno-0-5" href="#__codelineno-0-5"></a><span class="c1">// A function that takes another function and adds additional behavior (like a decorator)</span>
-</span><span id="__span-0-6"><a id="__codelineno-0-6" name="__codelineno-0-6" href="#__codelineno-0-6"></a><span class="kd">func</span><span class="w"> </span><span class="nx">logExecution</span><span class="p">(</span><span class="nx">fn</span><span class="w"> </span><span class="kd">func</span><span class="p">(</span><span class="kt">string</span><span class="p">)</span><span class="w"> </span><span class="kt">string</span><span class="p">)</span><span class="w"> </span><span class="kd">func</span><span class="p">(</span><span class="kt">string</span><span class="p">)</span><span class="w"> </span><span class="kt">string</span><span class="w"> </span><span class="p">{</span>
-</span><span id="__span-0-7"><a id="__codelineno-0-7" name="__codelineno-0-7" href="#__codelineno-0-7"></a><span class="w">    </span><span class="k">return</span><span class="w"> </span><span class="kd">func</span><span class="p">(</span><span class="nx">input</span><span class="w"> </span><span class="kt">string</span><span class="p">)</span><span class="w"> </span><span class="kt">string</span><span class="w"> </span><span class="p">{</span>
-</span><span id="__span-0-8"><a id="__codelineno-0-8" name="__codelineno-0-8" href="#__codelineno-0-8"></a><span class="w">        </span><span class="nx">fmt</span><span class="p">.</span><span class="nx">Println</span><span class="p">(</span><span class="s">&quot;Before calling the function&quot;</span><span class="p">)</span>
-</span><span id="__span-0-9"><a id="__codelineno-0-9" name="__codelineno-0-9" href="#__codelineno-0-9"></a><span class="w">        </span><span class="nx">result</span><span class="w"> </span><span class="o">:=</span><span class="w"> </span><span class="nx">fn</span><span class="p">(</span><span class="nx">input</span><span class="p">)</span><span class="w">  </span><span class="c1">// Call the original function</span>
-</span><span id="__span-0-10"><a id="__codelineno-0-10" name="__codelineno-0-10" href="#__codelineno-0-10"></a><span class="w">        </span><span class="nx">fmt</span><span class="p">.</span><span class="nx">Println</span><span class="p">(</span><span class="s">&quot;After calling the function&quot;</span><span class="p">)</span>
-</span><span id="__span-0-11"><a id="__codelineno-0-11" name="__codelineno-0-11" href="#__codelineno-0-11"></a><span class="w">        </span><span class="k">return</span><span class="w"> </span><span class="nx">result</span>
-</span><span id="__span-0-12"><a id="__codelineno-0-12" name="__codelineno-0-12" href="#__codelineno-0-12"></a><span class="w">    </span><span class="p">}</span>
-</span><span id="__span-0-13"><a id="__codelineno-0-13" name="__codelineno-0-13" href="#__codelineno-0-13"></a><span class="p">}</span>
-</span><span id="__span-0-14"><a id="__codelineno-0-14" name="__codelineno-0-14" href="#__codelineno-0-14"></a>
-</span><span id="__span-0-15"><a id="__codelineno-0-15" name="__codelineno-0-15" href="#__codelineno-0-15"></a><span class="c1">// A simple function to be decorated</span>
-</span><span id="__span-0-16"><a id="__codelineno-0-16" name="__codelineno-0-16" href="#__codelineno-0-16"></a><span class="kd">func</span><span class="w"> </span><span class="nx">sayHello</span><span class="p">(</span><span class="nx">name</span><span class="w"> </span><span class="kt">string</span><span class="p">)</span><span class="w"> </span><span class="kt">string</span><span class="w"> </span><span class="p">{</span>
-</span><span id="__span-0-17"><a id="__codelineno-0-17" name="__codelineno-0-17" href="#__codelineno-0-17"></a><span class="w">    </span><span class="k">return</span><span class="w"> </span><span class="s">&quot;Hello, &quot;</span><span class="w"> </span><span class="o">+</span><span class="w"> </span><span class="nx">name</span>
-</span><span id="__span-0-18"><a id="__codelineno-0-18" name="__codelineno-0-18" href="#__codelineno-0-18"></a><span class="p">}</span>
-</span><span id="__span-0-19"><a id="__codelineno-0-19" name="__codelineno-0-19" href="#__codelineno-0-19"></a>
-</span><span id="__span-0-20"><a id="__codelineno-0-20" name="__codelineno-0-20" href="#__codelineno-0-20"></a><span class="kd">func</span><span class="w"> </span><span class="nx">main</span><span class="p">()</span><span class="w"> </span><span class="p">{</span>
-</span><span id="__span-0-21"><a id="__codelineno-0-21" name="__codelineno-0-21" href="#__codelineno-0-21"></a><span class="w">    </span><span class="c1">// Wrap sayHello with the logExecution &quot;decorator&quot;</span>
-</span><span id="__span-0-22"><a id="__codelineno-0-22" name="__codelineno-0-22" href="#__codelineno-0-22"></a><span class="w">    </span><span class="nx">decorated</span><span class="w"> </span><span class="o">:=</span><span class="w"> </span><span class="nx">logExecution</span><span class="p">(</span><span class="nx">sayHello</span><span class="p">)</span>
+</span><span id="__span-0-3"><a id="__codelineno-0-3" name="__codelineno-0-3" href="#__codelineno-0-3"></a><span class="kn">import</span><span class="w"> </span><span class="p">(</span>
+</span><span id="__span-0-4"><a id="__codelineno-0-4" name="__codelineno-0-4" href="#__codelineno-0-4"></a><span class="w"> </span><span class="s">&quot;fmt&quot;</span>
+</span><span id="__span-0-5"><a id="__codelineno-0-5" name="__codelineno-0-5" href="#__codelineno-0-5"></a><span class="w"> </span><span class="s">&quot;strings&quot;</span>
+</span><span id="__span-0-6"><a id="__codelineno-0-6" name="__codelineno-0-6" href="#__codelineno-0-6"></a><span class="p">)</span>
+</span><span id="__span-0-7"><a id="__codelineno-0-7" name="__codelineno-0-7" href="#__codelineno-0-7"></a>
+</span><span id="__span-0-8"><a id="__codelineno-0-8" name="__codelineno-0-8" href="#__codelineno-0-8"></a><span class="kd">func</span><span class="w"> </span><span class="nx">main</span><span class="p">()</span><span class="w"> </span><span class="p">{</span>
+</span><span id="__span-0-9"><a id="__codelineno-0-9" name="__codelineno-0-9" href="#__codelineno-0-9"></a><span class="w"> </span><span class="nx">text</span><span class="w"> </span><span class="o">:=</span><span class="w"> </span><span class="s">&quot;Hello, World!&quot;</span>
+</span><span id="__span-0-10"><a id="__codelineno-0-10" name="__codelineno-0-10" href="#__codelineno-0-10"></a><span class="w"> </span><span class="nx">prefix</span><span class="w"> </span><span class="o">:=</span><span class="w"> </span><span class="s">&quot;Hello&quot;</span>
+</span><span id="__span-0-11"><a id="__codelineno-0-11" name="__codelineno-0-11" href="#__codelineno-0-11"></a><span class="w"> </span><span class="nx">suffix</span><span class="w"> </span><span class="o">:=</span><span class="w"> </span><span class="s">&quot;World!&quot;</span>
+</span><span id="__span-0-12"><a id="__codelineno-0-12" name="__codelineno-0-12" href="#__codelineno-0-12"></a><span class="w"> </span><span class="nx">substring</span><span class="w"> </span><span class="o">:=</span><span class="w"> </span><span class="s">&quot;lo, Wo&quot;</span>
+</span><span id="__span-0-13"><a id="__codelineno-0-13" name="__codelineno-0-13" href="#__codelineno-0-13"></a>
+</span><span id="__span-0-14"><a id="__codelineno-0-14" name="__codelineno-0-14" href="#__codelineno-0-14"></a><span class="w"> </span><span class="c1">// StartsWith</span>
+</span><span id="__span-0-15"><a id="__codelineno-0-15" name="__codelineno-0-15" href="#__codelineno-0-15"></a><span class="w"> </span><span class="k">if</span><span class="w"> </span><span class="nx">strings</span><span class="p">.</span><span class="nx">HasPrefix</span><span class="p">(</span><span class="nx">text</span><span class="p">,</span><span class="w"> </span><span class="nx">prefix</span><span class="p">)</span><span class="w"> </span><span class="p">{</span>
+</span><span id="__span-0-16"><a id="__codelineno-0-16" name="__codelineno-0-16" href="#__codelineno-0-16"></a><span class="w">  </span><span class="nx">fmt</span><span class="p">.</span><span class="nx">Printf</span><span class="p">(</span><span class="s">&quot;The text starts with &#39;%s&#39;\n&quot;</span><span class="p">,</span><span class="w"> </span><span class="nx">prefix</span><span class="p">)</span>
+</span><span id="__span-0-17"><a id="__codelineno-0-17" name="__codelineno-0-17" href="#__codelineno-0-17"></a><span class="w"> </span><span class="p">}</span>
+</span><span id="__span-0-18"><a id="__codelineno-0-18" name="__codelineno-0-18" href="#__codelineno-0-18"></a>
+</span><span id="__span-0-19"><a id="__codelineno-0-19" name="__codelineno-0-19" href="#__codelineno-0-19"></a><span class="w"> </span><span class="c1">// EndsWith</span>
+</span><span id="__span-0-20"><a id="__codelineno-0-20" name="__codelineno-0-20" href="#__codelineno-0-20"></a><span class="w"> </span><span class="k">if</span><span class="w"> </span><span class="nx">strings</span><span class="p">.</span><span class="nx">HasSuffix</span><span class="p">(</span><span class="nx">text</span><span class="p">,</span><span class="w"> </span><span class="nx">suffix</span><span class="p">)</span><span class="w"> </span><span class="p">{</span>
+</span><span id="__span-0-21"><a id="__codelineno-0-21" name="__codelineno-0-21" href="#__codelineno-0-21"></a><span class="w">  </span><span class="nx">fmt</span><span class="p">.</span><span class="nx">Printf</span><span class="p">(</span><span class="s">&quot;The text ends with &#39;%s&#39;\n&quot;</span><span class="p">,</span><span class="w"> </span><span class="nx">suffix</span><span class="p">)</span>
+</span><span id="__span-0-22"><a id="__codelineno-0-22" name="__codelineno-0-22" href="#__codelineno-0-22"></a><span class="w"> </span><span class="p">}</span>
 </span><span id="__span-0-23"><a id="__codelineno-0-23" name="__codelineno-0-23" href="#__codelineno-0-23"></a>
-</span><span id="__span-0-24"><a id="__codelineno-0-24" name="__codelineno-0-24" href="#__codelineno-0-24"></a><span class="w">    </span><span class="c1">// Call the decorated function</span>
-</span><span id="__span-0-25"><a id="__codelineno-0-25" name="__codelineno-0-25" href="#__codelineno-0-25"></a><span class="w">    </span><span class="nx">result</span><span class="w"> </span><span class="o">:=</span><span class="w"> </span><span class="nx">decorated</span><span class="p">(</span><span class="s">&quot;Alice&quot;</span><span class="p">)</span>
-</span><span id="__span-0-26"><a id="__codelineno-0-26" name="__codelineno-0-26" href="#__codelineno-0-26"></a><span class="w">    </span><span class="nx">fmt</span><span class="p">.</span><span class="nx">Println</span><span class="p">(</span><span class="nx">result</span><span class="p">)</span><span class="w">  </span><span class="c1">// Outputs: &quot;Hello, Alice&quot;</span>
-</span><span id="__span-0-27"><a id="__codelineno-0-27" name="__codelineno-0-27" href="#__codelineno-0-27"></a><span class="p">}</span>
+</span><span id="__span-0-24"><a id="__codelineno-0-24" name="__codelineno-0-24" href="#__codelineno-0-24"></a><span class="w"> </span><span class="c1">// Contains</span>
+</span><span id="__span-0-25"><a id="__codelineno-0-25" name="__codelineno-0-25" href="#__codelineno-0-25"></a><span class="w"> </span><span class="k">if</span><span class="w"> </span><span class="nx">strings</span><span class="p">.</span><span class="nx">Contains</span><span class="p">(</span><span class="nx">text</span><span class="p">,</span><span class="w"> </span><span class="nx">substring</span><span class="p">)</span><span class="w"> </span><span class="p">{</span>
+</span><span id="__span-0-26"><a id="__codelineno-0-26" name="__codelineno-0-26" href="#__codelineno-0-26"></a><span class="w">  </span><span class="nx">fmt</span><span class="p">.</span><span class="nx">Printf</span><span class="p">(</span><span class="s">&quot;The text contains &#39;%s&#39;\n&quot;</span><span class="p">,</span><span class="w"> </span><span class="nx">substring</span><span class="p">)</span>
+</span><span id="__span-0-27"><a id="__codelineno-0-27" name="__codelineno-0-27" href="#__codelineno-0-27"></a><span class="w"> </span><span class="p">}</span>
+</span><span id="__span-0-28"><a id="__codelineno-0-28" name="__codelineno-0-28" href="#__codelineno-0-28"></a>
+</span><span id="__span-0-29"><a id="__codelineno-0-29" name="__codelineno-0-29" href="#__codelineno-0-29"></a><span class="w"> </span><span class="c1">// Regex</span>
+</span><span id="__span-0-30"><a id="__codelineno-0-30" name="__codelineno-0-30" href="#__codelineno-0-30"></a><span class="w"> </span><span class="nx">startsWithPattern</span><span class="w"> </span><span class="o">:=</span><span class="w"> </span><span class="s">`^Hello`</span>
+</span><span id="__span-0-31"><a id="__codelineno-0-31" name="__codelineno-0-31" href="#__codelineno-0-31"></a><span class="w"> </span><span class="nx">startsWithRegex</span><span class="w"> </span><span class="o">:=</span><span class="w"> </span><span class="nx">regexp</span><span class="p">.</span><span class="nx">MustCompile</span><span class="p">(</span><span class="nx">startsWithPattern</span><span class="p">)</span>
+</span><span id="__span-0-32"><a id="__codelineno-0-32" name="__codelineno-0-32" href="#__codelineno-0-32"></a><span class="w"> </span><span class="k">if</span><span class="w"> </span><span class="nx">startsWithRegex</span><span class="p">.</span><span class="nx">MatchString</span><span class="p">(</span><span class="nx">text</span><span class="p">)</span><span class="w"> </span><span class="p">{</span>
+</span><span id="__span-0-33"><a id="__codelineno-0-33" name="__codelineno-0-33" href="#__codelineno-0-33"></a><span class="w">  </span><span class="nx">fmt</span><span class="p">.</span><span class="nx">Printf</span><span class="p">(</span><span class="s">&quot;The text starts with &#39;Hello&#39;\n&quot;</span><span class="p">)</span>
+</span><span id="__span-0-34"><a id="__codelineno-0-34" name="__codelineno-0-34" href="#__codelineno-0-34"></a><span class="w"> </span><span class="p">}</span>
+</span><span id="__span-0-35"><a id="__codelineno-0-35" name="__codelineno-0-35" href="#__codelineno-0-35"></a><span class="p">}</span>
 </span></code></pre></div>
-<h3 id="explanation-1">Explanation 1</h3>
-<ul>
-<li><code>logExecution</code> is a higher-order function that takes another function <code>fn</code> as an argument and returns a new function that wraps <code>fn</code>. This is like a decorator in Python.</li>
-<li>The returned function has additional logic (in this case, logging before and after the function call) around the original function.</li>
-</ul>
-<h3 id="example-2-wrapping-methods-with-closures">Example 2: Wrapping Methods with Closures</h3>
-<p>In Go, closures can also be used to encapsulate behavior around methods.</p>
-<div class="language-go highlight"><pre><span></span><code><span id="__span-1-1"><a id="__codelineno-1-1" name="__codelineno-1-1" href="#__codelineno-1-1"></a><span class="kn">package</span><span class="w"> </span><span class="nx">main</span>
-</span><span id="__span-1-2"><a id="__codelineno-1-2" name="__codelineno-1-2" href="#__codelineno-1-2"></a>
-</span><span id="__span-1-3"><a id="__codelineno-1-3" name="__codelineno-1-3" href="#__codelineno-1-3"></a><span class="kn">import</span><span class="w"> </span><span class="s">&quot;fmt&quot;</span>
-</span><span id="__span-1-4"><a id="__codelineno-1-4" name="__codelineno-1-4" href="#__codelineno-1-4"></a>
-</span><span id="__span-1-5"><a id="__codelineno-1-5" name="__codelineno-1-5" href="#__codelineno-1-5"></a><span class="c1">// A function that takes a method and wraps it with additional behavior</span>
-</span><span id="__span-1-6"><a id="__codelineno-1-6" name="__codelineno-1-6" href="#__codelineno-1-6"></a><span class="kd">func</span><span class="w"> </span><span class="nx">addLogging</span><span class="p">(</span><span class="nx">fn</span><span class="w"> </span><span class="kd">func</span><span class="p">())</span><span class="w"> </span><span class="kd">func</span><span class="p">()</span><span class="w"> </span><span class="p">{</span>
-</span><span id="__span-1-7"><a id="__codelineno-1-7" name="__codelineno-1-7" href="#__codelineno-1-7"></a><span class="w">    </span><span class="k">return</span><span class="w"> </span><span class="kd">func</span><span class="p">()</span><span class="w"> </span><span class="p">{</span>
-</span><span id="__span-1-8"><a id="__codelineno-1-8" name="__codelineno-1-8" href="#__codelineno-1-8"></a><span class="w">        </span><span class="nx">fmt</span><span class="p">.</span><span class="nx">Println</span><span class="p">(</span><span class="s">&quot;Before function call&quot;</span><span class="p">)</span>
-</span><span id="__span-1-9"><a id="__codelineno-1-9" name="__codelineno-1-9" href="#__codelineno-1-9"></a><span class="w">        </span><span class="nx">fn</span><span class="p">()</span><span class="w">  </span><span class="c1">// Original function call</span>
-</span><span id="__span-1-10"><a id="__codelineno-1-10" name="__codelineno-1-10" href="#__codelineno-1-10"></a><span class="w">        </span><span class="nx">fmt</span><span class="p">.</span><span class="nx">Println</span><span class="p">(</span><span class="s">&quot;After function call&quot;</span><span class="p">)</span>
-</span><span id="__span-1-11"><a id="__codelineno-1-11" name="__codelineno-1-11" href="#__codelineno-1-11"></a><span class="w">    </span><span class="p">}</span>
-</span><span id="__span-1-12"><a id="__codelineno-1-12" name="__codelineno-1-12" href="#__codelineno-1-12"></a><span class="p">}</span>
-</span><span id="__span-1-13"><a id="__codelineno-1-13" name="__codelineno-1-13" href="#__codelineno-1-13"></a>
-</span><span id="__span-1-14"><a id="__codelineno-1-14" name="__codelineno-1-14" href="#__codelineno-1-14"></a><span class="kd">func</span><span class="w"> </span><span class="nx">greet</span><span class="p">()</span><span class="w"> </span><span class="p">{</span>
-</span><span id="__span-1-15"><a id="__codelineno-1-15" name="__codelineno-1-15" href="#__codelineno-1-15"></a><span class="w">    </span><span class="nx">fmt</span><span class="p">.</span><span class="nx">Println</span><span class="p">(</span><span class="s">&quot;Hello, World!&quot;</span><span class="p">)</span>
-</span><span id="__span-1-16"><a id="__codelineno-1-16" name="__codelineno-1-16" href="#__codelineno-1-16"></a><span class="p">}</span>
-</span><span id="__span-1-17"><a id="__codelineno-1-17" name="__codelineno-1-17" href="#__codelineno-1-17"></a>
-</span><span id="__span-1-18"><a id="__codelineno-1-18" name="__codelineno-1-18" href="#__codelineno-1-18"></a><span class="kd">func</span><span class="w"> </span><span class="nx">main</span><span class="p">()</span><span class="w"> </span><span class="p">{</span>
-</span><span id="__span-1-19"><a id="__codelineno-1-19" name="__codelineno-1-19" href="#__codelineno-1-19"></a><span class="w">    </span><span class="c1">// Wrap greet with addLogging</span>
-</span><span id="__span-1-20"><a id="__codelineno-1-20" name="__codelineno-1-20" href="#__codelineno-1-20"></a><span class="w">    </span><span class="nx">loggedGreet</span><span class="w"> </span><span class="o">:=</span><span class="w"> </span><span class="nx">addLogging</span><span class="p">(</span><span class="nx">greet</span><span class="p">)</span>
-</span><span id="__span-1-21"><a id="__codelineno-1-21" name="__codelineno-1-21" href="#__codelineno-1-21"></a><span class="w">    </span><span class="nx">loggedGreet</span><span class="p">()</span><span class="w">  </span><span class="c1">// Outputs logs before and after greet</span>
-</span><span id="__span-1-22"><a id="__codelineno-1-22" name="__codelineno-1-22" href="#__codelineno-1-22"></a><span class="p">}</span>
-</span></code></pre></div>
-<h3 id="example-3-wrapping-methods-with-interfaces">Example 3: Wrapping Methods with Interfaces</h3>
-<p>You can also achieve decorator-like functionality with <strong>interfaces</strong> in Go, especially when working with methods in structs.</p>
-<div class="language-go highlight"><pre><span></span><code><span id="__span-2-1"><a id="__codelineno-2-1" name="__codelineno-2-1" href="#__codelineno-2-1"></a><span class="kn">package</span><span class="w"> </span><span class="nx">main</span>
-</span><span id="__span-2-2"><a id="__codelineno-2-2" name="__codelineno-2-2" href="#__codelineno-2-2"></a>
-</span><span id="__span-2-3"><a id="__codelineno-2-3" name="__codelineno-2-3" href="#__codelineno-2-3"></a><span class="kn">import</span><span class="w"> </span><span class="s">&quot;fmt&quot;</span>
-</span><span id="__span-2-4"><a id="__codelineno-2-4" name="__codelineno-2-4" href="#__codelineno-2-4"></a>
-</span><span id="__span-2-5"><a id="__codelineno-2-5" name="__codelineno-2-5" href="#__codelineno-2-5"></a><span class="c1">// Define an interface for the behavior we want to decorate</span>
-</span><span id="__span-2-6"><a id="__codelineno-2-6" name="__codelineno-2-6" href="#__codelineno-2-6"></a><span class="kd">type</span><span class="w"> </span><span class="nx">Greeter</span><span class="w"> </span><span class="kd">interface</span><span class="w"> </span><span class="p">{</span>
-</span><span id="__span-2-7"><a id="__codelineno-2-7" name="__codelineno-2-7" href="#__codelineno-2-7"></a><span class="w">    </span><span class="nx">Greet</span><span class="p">()</span><span class="w"> </span><span class="kt">string</span>
-</span><span id="__span-2-8"><a id="__codelineno-2-8" name="__codelineno-2-8" href="#__codelineno-2-8"></a><span class="p">}</span>
-</span><span id="__span-2-9"><a id="__codelineno-2-9" name="__codelineno-2-9" href="#__codelineno-2-9"></a>
-</span><span id="__span-2-10"><a id="__codelineno-2-10" name="__codelineno-2-10" href="#__codelineno-2-10"></a><span class="c1">// A basic struct that implements the Greeter interface</span>
-</span><span id="__span-2-11"><a id="__codelineno-2-11" name="__codelineno-2-11" href="#__codelineno-2-11"></a><span class="kd">type</span><span class="w"> </span><span class="nx">Person</span><span class="w"> </span><span class="kd">struct</span><span class="w"> </span><span class="p">{</span>
-</span><span id="__span-2-12"><a id="__codelineno-2-12" name="__codelineno-2-12" href="#__codelineno-2-12"></a><span class="w">    </span><span class="nx">Name</span><span class="w"> </span><span class="kt">string</span>
-</span><span id="__span-2-13"><a id="__codelineno-2-13" name="__codelineno-2-13" href="#__codelineno-2-13"></a><span class="p">}</span>
-</span><span id="__span-2-14"><a id="__codelineno-2-14" name="__codelineno-2-14" href="#__codelineno-2-14"></a>
-</span><span id="__span-2-15"><a id="__codelineno-2-15" name="__codelineno-2-15" href="#__codelineno-2-15"></a><span class="kd">func</span><span class="w"> </span><span class="p">(</span><span class="nx">p</span><span class="w"> </span><span class="nx">Person</span><span class="p">)</span><span class="w"> </span><span class="nx">Greet</span><span class="p">()</span><span class="w"> </span><span class="kt">string</span><span class="w"> </span><span class="p">{</span>
-</span><span id="__span-2-16"><a id="__codelineno-2-16" name="__codelineno-2-16" href="#__codelineno-2-16"></a><span class="w">    </span><span class="k">return</span><span class="w"> </span><span class="s">&quot;Hello, &quot;</span><span class="w"> </span><span class="o">+</span><span class="w"> </span><span class="nx">p</span><span class="p">.</span><span class="nx">Name</span>
-</span><span id="__span-2-17"><a id="__codelineno-2-17" name="__codelineno-2-17" href="#__codelineno-2-17"></a><span class="p">}</span>
-</span><span id="__span-2-18"><a id="__codelineno-2-18" name="__codelineno-2-18" href="#__codelineno-2-18"></a>
-</span><span id="__span-2-19"><a id="__codelineno-2-19" name="__codelineno-2-19" href="#__codelineno-2-19"></a><span class="c1">// A decorator that wraps a Greeter and modifies its behavior</span>
-</span><span id="__span-2-20"><a id="__codelineno-2-20" name="__codelineno-2-20" href="#__codelineno-2-20"></a><span class="kd">type</span><span class="w"> </span><span class="nx">GreeterWithLog</span><span class="w"> </span><span class="kd">struct</span><span class="w"> </span><span class="p">{</span>
-</span><span id="__span-2-21"><a id="__codelineno-2-21" name="__codelineno-2-21" href="#__codelineno-2-21"></a><span class="w">    </span><span class="nx">Greeter</span>
-</span><span id="__span-2-22"><a id="__codelineno-2-22" name="__codelineno-2-22" href="#__codelineno-2-22"></a><span class="p">}</span>
-</span><span id="__span-2-23"><a id="__codelineno-2-23" name="__codelineno-2-23" href="#__codelineno-2-23"></a>
-</span><span id="__span-2-24"><a id="__codelineno-2-24" name="__codelineno-2-24" href="#__codelineno-2-24"></a><span class="kd">func</span><span class="w"> </span><span class="p">(</span><span class="nx">g</span><span class="w"> </span><span class="nx">GreeterWithLog</span><span class="p">)</span><span class="w"> </span><span class="nx">Greet</span><span class="p">()</span><span class="w"> </span><span class="kt">string</span><span class="w"> </span><span class="p">{</span>
-</span><span id="__span-2-25"><a id="__codelineno-2-25" name="__codelineno-2-25" href="#__codelineno-2-25"></a><span class="w">    </span><span class="nx">fmt</span><span class="p">.</span><span class="nx">Println</span><span class="p">(</span><span class="s">&quot;Before greeting&quot;</span><span class="p">)</span>
-</span><span id="__span-2-26"><a id="__codelineno-2-26" name="__codelineno-2-26" href="#__codelineno-2-26"></a><span class="w">    </span><span class="nx">result</span><span class="w"> </span><span class="o">:=</span><span class="w"> </span><span class="nx">g</span><span class="p">.</span><span class="nx">Greeter</span><span class="p">.</span><span class="nx">Greet</span><span class="p">()</span><span class="w">  </span><span class="c1">// Call the original Greet method</span>
-</span><span id="__span-2-27"><a id="__codelineno-2-27" name="__codelineno-2-27" href="#__codelineno-2-27"></a><span class="w">    </span><span class="nx">fmt</span><span class="p">.</span><span class="nx">Println</span><span class="p">(</span><span class="s">&quot;After greeting&quot;</span><span class="p">)</span>
-</span><span id="__span-2-28"><a id="__codelineno-2-28" name="__codelineno-2-28" href="#__codelineno-2-28"></a><span class="w">    </span><span class="k">return</span><span class="w"> </span><span class="nx">result</span>
-</span><span id="__span-2-29"><a id="__codelineno-2-29" name="__codelineno-2-29" href="#__codelineno-2-29"></a><span class="p">}</span>
-</span><span id="__span-2-30"><a id="__codelineno-2-30" name="__codelineno-2-30" href="#__codelineno-2-30"></a>
-</span><span id="__span-2-31"><a id="__codelineno-2-31" name="__codelineno-2-31" href="#__codelineno-2-31"></a><span class="kd">func</span><span class="w"> </span><span class="nx">main</span><span class="p">()</span><span class="w"> </span><span class="p">{</span>
-</span><span id="__span-2-32"><a id="__codelineno-2-32" name="__codelineno-2-32" href="#__codelineno-2-32"></a><span class="w">    </span><span class="nx">person</span><span class="w"> </span><span class="o">:=</span><span class="w"> </span><span class="nx">Person</span><span class="p">{</span><span class="nx">Name</span><span class="p">:</span><span class="w"> </span><span class="s">&quot;Alice&quot;</span><span class="p">}</span>
-</span><span id="__span-2-33"><a id="__codelineno-2-33" name="__codelineno-2-33" href="#__codelineno-2-33"></a><span class="w">    </span><span class="nx">greeter</span><span class="w"> </span><span class="o">:=</span><span class="w"> </span><span class="nx">GreeterWithLog</span><span class="p">{</span><span class="nx">Greeter</span><span class="p">:</span><span class="w"> </span><span class="nx">person</span><span class="p">}</span>
-</span><span id="__span-2-34"><a id="__codelineno-2-34" name="__codelineno-2-34" href="#__codelineno-2-34"></a>
-</span><span id="__span-2-35"><a id="__codelineno-2-35" name="__codelineno-2-35" href="#__codelineno-2-35"></a><span class="w">    </span><span class="nx">fmt</span><span class="p">.</span><span class="nx">Println</span><span class="p">(</span><span class="nx">greeter</span><span class="p">.</span><span class="nx">Greet</span><span class="p">())</span><span class="w">  </span><span class="c1">// Outputs log and the greeting</span>
-</span><span id="__span-2-36"><a id="__codelineno-2-36" name="__codelineno-2-36" href="#__codelineno-2-36"></a><span class="p">}</span>
-</span></code></pre></div>
-<h3 id="explanation-3">Explanation 3</h3>
-<ul>
-<li><strong>Interface</strong>: We define the <code>Greeter</code> interface and then implement it with the <code>Person</code> struct.</li>
-<li><strong>Decorator</strong>: The <code>GreeterWithLog</code> struct "wraps" a <code>Greeter</code> and modifies its behavior. The method <code>Greet()</code> of <code>GreeterWithLog</code> adds additional behavior before and after calling the original <code>Greet()</code> method.</li>
-</ul>
-<h3 id="differences-from-python-decorators">Differences from Python Decorators</h3>
-<ul>
-<li><strong>Python decorators</strong>: Python decorators are syntactic sugar that allows wrapping a function or method in a cleaner way using the <code>@decorator</code> syntax.</li>
-<li><strong>Go Wrappers</strong>: In Go, decorators can be implemented using higher-order functions, closures, or interfaces, but the syntax and approach differ from Python.</li>
-</ul>
-<h3 id="summary">Summary</h3>
-<p>While Go doesn't have Python-style decorators, you can still achieve similar functionality through higher-order functions, closures, and interfaces, which are powerful tools for wrapping and modifying behavior in Go.</p>
 
 
 
@@ -1884,7 +1585,7 @@
       <nav class="md-footer__inner md-grid" aria-label="Footer" >
         
           
-          <a href="../kwargs/" class="md-footer__link md-footer__link--prev" aria-label="Previous: Kwargs">
+          <a href="../../advanced/cli/" class="md-footer__link md-footer__link--prev" aria-label="Previous: Command-Line Interface">
             <div class="md-footer__button md-icon">
               
               <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11z"/></svg>
@@ -1894,20 +1595,20 @@
                 Previous
               </span>
               <div class="md-ellipsis">
-                Kwargs
+                Command-Line Interface
               </div>
             </div>
           </a>
         
         
           
-          <a href="../data-types/" class="md-footer__link md-footer__link--next" aria-label="Next: Data Types">
+          <a href="../any-dict-list/" class="md-footer__link md-footer__link--next" aria-label="Next: Any/Dict/List">
             <div class="md-footer__title">
               <span class="md-footer__direction">
                 Next
               </span>
               <div class="md-ellipsis">
-                Data Types
+                Any/Dict/List
               </div>
             </div>
             <div class="md-footer__button md-icon">
