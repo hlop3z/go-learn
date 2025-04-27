@@ -23,7 +23,7 @@ assets cmd config deployments docs examples pkg scripts tests tools
 git clone https://github.com/hlop3z/project-layout-go.git && rm -rf project-layout-go/.git
 ```
 
-## Example: Go Directory Layout (Clean Architecture)
+## Example: Go Multiple Directories Layout (Clean Architecture)
 
 ```plaintext
 {your_project}/
@@ -53,4 +53,21 @@ git clone https://github.com/hlop3z/project-layout-go.git && rm -rf project-layo
 │   └── template/               # Template files for rendering views (HTML, JSX, etc.)
 ├── go.mod                      # ~ (Package/Module) => github.com/YOUR_USER_OR_ORG_NAME/YOUR_REPO_NAME
 └── {etc ...}                   # All other files and directories
+```
+
+## Example: Go Single Directory Layout
+
+```plaintext
+module/
+├── main.go             # Entry point of the application
+├── types.go            # Defines data structures, constants, and interfaces
+├── config.go           # Handles configuration loading and parsing
+├── handlers.go         # HTTP handlers or main API endpoints
+├── services.go         # Business logic and application services
+├── repository.go       # Handles database or external data access
+├── middleware.go       # Defines HTTP middleware (e.g., auth, logging)
+├── routes.go           # Sets up and manages HTTP routes
+├── utils.go            # Utility/helper functions
+├── helpers.go          # Helper/utility functions
+└── errors.go           # Custom error definitions and error handling utilities
 ```

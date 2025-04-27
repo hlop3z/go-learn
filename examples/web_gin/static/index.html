@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="Content-Type" content="text/html;charset=utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+</head>
+
+<body>
+    <script>
+        async function fetchSecrets(token) {
+            const url = "http://localhost:8080/admin/secrets";
+
+            try {
+                const response = await fetch(url, {
+                    method: "GET",
+                    headers: {
+                        Authorization: `Bearer ${token}`,
+                        "Content-Type": "application/json",
+                    },
+                    mode: "cors", // For cross-origin requests
+                    credentials: "include",
+                });
+
+                // Handle non-OK responses
+                if (!response.ok) {
+                    const errorText = await response.text();
+                    throw new Error(
+                        `HTTP error! Status: ${response.status} - ${errorText}`
+                    );
+                }
+
+                // Parse JSON response
+                const data = await response.json();
+                console.log("Secrets:", data);
+
+                // Append JSON string
+                const vm = document.createElement("div")
+                vm.innerHTML = JSON.stringify(data);
+                document.body.appendChild(vm)
+            } catch (error) {
+                console.error("Error fetching secrets:", error.message);
+            }
+        }
+
+        // Example usage: Replace "validToken" with your actual token
+        fetchSecrets("token1");
+    </script>
+</body>
+
+</html>

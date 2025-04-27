@@ -4,8 +4,8 @@ For full documentation visit [mkdocs.org](https://www.mkdocs.org).
 
 ## Commands
 
-- `pdm dev` - Start the live-reloading docs server.
-- `pdm deploy` - Deploy the documentation site to GitHub.
+- `uv run mkdocs serve --dev-addr 0.0.0.0:8055` - Start the live-reloading docs server.
+- `uv run mkdocs gh-deploy --force` - Deploy the documentation site to GitHub.
 
 ## Project layout
 

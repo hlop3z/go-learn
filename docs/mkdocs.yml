@@ -1,4 +1,3 @@
-# Configurations
 site_name: Go Notes
 site_url: https://hlop3z.github.io/go-learn/
 repo_url: https://github.com/hlop3z/go-learn/
@@ -11,10 +10,6 @@ watch:
 # Extras
 extra_css:
   - css/extra.css
-  - plugins/prism/style.css
-
-extra_javascript:
-  - plugins/prism/index.js
 
 # Navigation
 nav:
@@ -40,6 +35,7 @@ nav:
       - Advanced:
           - Command-Line Interface: advanced/cli.md
       - Pythonic:
+          - Strings: pythonic/strings.md
           - Any/Dict/List: pythonic/any-dict-list.md
           - Kwargs: pythonic/kwargs.md
           - Decorators: pythonic/decorators.md
@@ -47,6 +43,8 @@ nav:
           - Operators: pythonic/operators.md
   - Packages:
       - Layout: packages/layout.md
+      - Domains:
+          - Web: packages/domains/web.md
       - Vendors:
           - ECHO: packages/vendors/echo.md
           - GORM: packages/vendors/gorm.md
@@ -91,6 +89,13 @@ theme:
 markdown_extensions:
   - tables
   - attr_list
+  - pymdownx.highlight:
+      anchor_linenums: true
+      line_spans: __span
+      pygments_lang_class: true
+  - pymdownx.inlinehilite
+  - pymdownx.snippets
+  - pymdownx.superfences
 
 # Plugins
 plugins:
