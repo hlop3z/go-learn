@@ -33,6 +33,7 @@ nav:
           - JSON: files/json_load_dump.md
           - HTML: files/html_templates.md
       - Advanced:
+          - Pointers: advanced/pointers.md
           - Command-Line Interface: advanced/cli.md
       - Pythonic:
           - Strings: pythonic/strings.md
